@@ -1,0 +1,98 @@
+{
+  "id": "1026-37-a-6-purpose",
+  "panel_header": "Purpose",
+  "regulation": "12 CFR §1026.37(a)(9)",
+  "summary": "The purpose of the loan: Purchase, Refinance, Construction, or Home Equity. Correct classification governs applicable disclosure requirements, fee structures, and HMDA reporting obligations.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 6,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-5-loan-term",
+    "next_field_id": "1026-37-a-7-product"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Purpose</strong> field classifies the transaction as Purchase, Refinance, Construction, or Home Equity. Correct classification governs applicable disclosure requirements, fee structures, and HMDA reporting obligations.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(9) requires the creditor to disclose the loan purpose using one of four designations: Purchase, Refinance, Construction, or Home Equity. The designation must accurately reflect the nature of the transaction and must be consistent with the loan application and HMDA LAR."
+      },
+      {
+        "title": "Classification Rule",
+        "content": "The distinction between 'Refinance' and 'Home Equity' is significant — it affects applicable requirements and disclosure formats. A cash-out refinance is classified as 'Refinance,' not 'Home Equity,' even though equity is being accessed. For construction-to-permanent loans, the primary purpose of the transaction governs the designation."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(9).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The purpose of the transaction must be disclosed using one of the four applicable terms. For transactions that could be characterized as more than one type — for example, a construction-to-permanent loan — the creditor must use the designation that best describes the primary purpose of the transaction. A 'Home Equity' designation applies to closed-end credit transactions where the purpose is not purchase, refinance, or construction and the loan is secured by the consumer's existing dwelling or other real property."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The loan purpose classification governs applicable disclosure requirements, determines which fee structures and MI disclosures apply, and feeds directly into HMDA LAR reporting. An incorrect purpose classification is therefore not merely a TRID error — it creates a simultaneous HMDA data integrity issue. Regulators use this field to evaluate whether the institution is consistently and accurately categorizing the transactions it originates.",
+    "how_reviewed": "Examiners compare the purpose disclosed on the Loan Estimate against the signed loan application (Form 1003) and the HMDA LAR for the same transaction. For transactions that could be characterized multiple ways — such as construction-to-permanent loans or delayed financing — examiners evaluate whether the classification used is consistent with regulatory guidance and the actual transaction structure. Systemic mismatches between the LE and HMDA LAR are escalated as a cross-compliance concern.",
+    "common_errors": [
+      {
+        "title": "Refinance Misclassified as Purchase",
+        "description": "A refinance transaction is classified as a purchase on the Loan Estimate, most commonly caused by LOS system configuration errors or incorrect defaults that were not caught during pre-disclosure review.",
+        "cite": "§1026.37(a)(9)"
+      },
+      {
+        "title": "Purpose Inconsistent With HMDA LAR",
+        "description": "The loan purpose on the Loan Estimate does not match the HMDA LAR purpose code for the same transaction, signaling a data integrity problem that spans both TRID and HMDA compliance functions."
+      },
+      {
+        "title": "Purpose Not Updated After Transaction Restructure",
+        "description": "The transaction structure changed prior to consummation — for example, a purchase transaction was restructured as a refinance — but the purpose classification on the Loan Estimate was not updated to reflect the change."
+      },
+      {
+        "title": "Cash-Out Refinance Misreported as Rate-and-Term",
+        "description": "A cash-out refinance is classified as a rate-and-term refinance on the Loan Estimate, which, while both are 'Refinance' under TRID, signals a potential HMDA reporting error where distinct purpose codes are required."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Cross-Reference Purpose Against HMDA LAR",
+        "description": "Cross-reference the purpose disclosure against the HMDA LAR for the same loan — mismatches signal a systemic classification problem in the origination system or a training gap in operations staff that warrants a broader review."
+      },
+      {
+        "title": "Verify Purpose Against the Signed 1003",
+        "description": "Review the signed loan application (Form 1003) to verify the stated purpose matches the Loan Estimate — a discrepancy between the application and the disclosure is a primary indicator of misclassification and should be investigated."
+      },
+      {
+        "title": "Evaluate Mixed-Purpose Transactions Carefully",
+        "description": "For transactions that involve both equity access and property purchase — such as delayed financing — confirm the classification used is consistent with HMDA guidance and applicable program guidelines before the LE is issued."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(9)",
+      "label": "Loan Purpose — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-9"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": false,
+    "triggers": [],
+    "regulatory_cite": null
+  },
+  "related_fields": [
+    "1026-37-a-4-sale-price",
+    "1026-37-a-7-product",
+    "1026-37-a-8-loan-type"
+  ],
+  "tags": [
+    "general-information",
+    "loan-purpose",
+    "hmda",
+    "classification"
+  ],
+  "last_updated": "2026-02-27"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "1026-37-a-1-date-issued",
+  "panel_header": "Date Issued",
+  "regulation": "12 CFR §1026.37(a)(4)",
+  "summary": "The date the Loan Estimate was delivered or placed in the mail. The LE must be delivered no later than three business days after receiving a completed application.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 1,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": null,
+    "next_field_id": "1026-37-a-2-applicants"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Date Issued</strong> is the date the Loan Estimate is delivered or placed in the mail to the applicant. This is not the date the form was generated in the loan origination system — it must reflect the actual delivery event.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "Under §1026.19(e)(1)(iii), the creditor must deliver the Loan Estimate no later than three business days after receiving a completed application as defined in §1026.2(a)(3)(ii). For mailed disclosures, §1026.19(e)(1)(iv) adds a presumption of receipt three business days after mailing."
+      },
+      {
+        "title": "Timing Rule",
+        "content": "The Date Issued triggers the consumer's <strong>10-business-day shopping window</strong> — the period during which the applicant can accept the terms before they expire. If the rate is locked, the rate lock expiration date must also be disclosed on the same form."
+      },
+      {
+        "title": "Business Day Definition",
+        "content": "For the 3-day delivery requirement, <strong>\"business day\"</strong> means all calendar days except Sundays and federal public holidays. Note this is a different definition than the one used for the 7-day waiting period — a common source of confusion."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(4).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The date disclosed under §1026.37(a)(4) is the date the Loan Estimate is delivered to the consumer or placed in the mail. If the Loan Estimate is delivered in person, the date issued is the date of delivery. If placed in the mail, the date issued is the date it is placed in the mail — not the date the consumer receives it. A creditor that uses a delivery service or courier must disclose the date the Loan Estimate is given to the delivery service, not the estimated delivery date."
+      },
+      {
+        "title": "Relation to the 7-Day Waiting Period",
+        "content": "The Date Issued also starts the 7-business-day waiting period under §1026.19(e)(1)(iii)(A), during which the consumer cannot be required to proceed to consummation. For this waiting period, 'business day' means all calendar days except Sundays and federal public holidays — the same definition used for the 3-day delivery rule."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Date Issued is the anchor point for TRID's most critical timing obligations, including the three-business-day delivery requirement and the seven-business-day waiting period before consummation. An inaccurate or backdated Date Issued undermines the consumer's ability to use the disclosure as intended and deprives regulators of the ability to confirm timely delivery. Accurate disclosure of this date is a foundational compliance requirement that protects the consumer's shopping window and right to compare offers.",
+    "how_reviewed": "Examiners compare the Date Issued against the application date documented in the loan file, LOS audit logs, and any delivery confirmation records such as postal receipts or courier tracking. For mailed disclosures, examiners verify that the mailing date in the file is consistent with the date on the form and that the three-business-day delivery presumption was appropriately applied. Discrepancies between the stated Date Issued and system-generated timestamps are treated as potential backdating findings requiring further investigation.",
+    "common_errors": [
+      {
+        "title": "Late Issuance Beyond Three-Business-Day Window",
+        "description": "The Date Issued reflects delivery more than three business days after a completed application was received, violating the mandatory delivery timeline and depriving the consumer of timely cost information.",
+        "cite": "§1026.19(e)(1)(iii)"
+      },
+      {
+        "title": "Backdating the Date Issued",
+        "description": "The stated Date Issued precedes evidence of actual delivery in the file — such as a LOS audit log, courier receipt, or postmark — indicating the form was not issued when represented.",
+        "cite": "§1026.37(a)(4)"
+      },
+      {
+        "title": "Wrong Business Day Definition Applied",
+        "description": "The creditor uses the narrower business day definition (open-for-business days) instead of the correct definition (all calendar days except Sundays and federal public holidays) when calculating the three-business-day delivery window.",
+        "cite": "§1026.19(e)(1)(iii)"
+      },
+      {
+        "title": "LOS Date Inconsistent With Form Date",
+        "description": "The Date Issued on the Loan Estimate does not match the issuance date recorded in the loan origination system, creating conflicting records that complicate examination of delivery compliance."
+      },
+      {
+        "title": "Revised LE Date Not Tied to Triggering Event",
+        "description": "A revised Loan Estimate shows a Date Issued that is not consistent with the documented date of the changed circumstance or consumer-requested change that triggered the revision.",
+        "cite": "§1026.19(e)(3)(iv)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Compare Date Against LOS Audit Logs",
+        "description": "Compare the Date Issued against the application date and LOS audit logs or delivery confirmations in the file — inconsistencies between the stated date and system records are the primary indicator of backdating and should trigger escalation."
+      },
+      {
+        "title": "Confirm the Correct Business Day Definition",
+        "description": "Verify that the creditor is using the correct business day definition — all calendar days except Sundays and federal public holidays — for the three-day delivery rule, not the narrower open-for-business definition sometimes used for other timing calculations."
+      },
+      {
+        "title": "Check Mailing Evidence for Mailed Disclosures",
+        "description": "For mailed Loan Estimates, verify the file contains evidence of the mailing date such as a postal receipt or LOS notation, confirming that the three-business-day receipt presumption was properly applied and the disclosure timeline is supportable."
+      },
+      {
+        "title": "Review Each Revised LE Independently",
+        "description": "When reviewing revised Loan Estimates, confirm that each version shows a Date Issued consistent with the date of its triggering event — a late-dated revised LE is as significant a compliance finding as a late initial disclosure."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(4)",
+      "label": "Date Issued — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-4"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(1)(iii)",
+      "label": "Timing of Delivery — 3-business-day rule",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-1-iii"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": false,
+    "triggers": [],
+    "regulatory_cite": null
+  },
+  "related_fields": [
+    "1026-37-a-9-loan-id",
+    "1026-37-a-10-rate-lock"
+  ],
+  "tags": [
+    "timing",
+    "delivery",
+    "general-information",
+    "application"
+  ],
+  "last_updated": "2026-02-27"
+}

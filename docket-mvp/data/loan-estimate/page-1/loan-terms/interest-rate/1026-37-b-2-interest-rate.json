@@ -1,0 +1,109 @@
+{
+  "id": "1026-37-b-2-interest-rate",
+  "panel_header": "Interest Rate",
+  "regulation": "12 CFR §1026.37(b)(2)",
+  "summary": "The annual interest rate applicable at consummation. For a fixed-rate loan, it cannot increase after closing. If not locked at time of LE issuance, the current market rate must be disclosed with a notation that it is subject to change.",
+  "navigation": {
+    "section_group": "Loan Terms",
+    "field_number": 2,
+    "field_total": 5,
+    "page": 1,
+    "prev_field_id": "1026-37-b-1-loan-amount",
+    "next_field_id": "1026-37-b-3-principal-interest"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Interest Rate</strong> is the annual rate applicable at consummation. For a fixed-rate loan, it cannot increase after closing. If the rate is not locked at time of LE issuance, the current market rate must be disclosed.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(b)(2) requires disclosure of the interest rate and an indicator of whether it can increase after consummation. For a fixed-rate mortgage, the indicator must be 'NO.' If the rate is not locked, the current rate in effect must be disclosed and the LE must indicate it is subject to change."
+      },
+      {
+        "title": "Rate Lock Interaction",
+        "content": "The interest rate field is directly linked to the rate lock disclosure under §1026.37(a)(13). Upon locking a floating rate, the creditor must issue a revised LE within three business days, updating the rate and any rate-dependent charges such as discount points and lender credits."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(b)(2).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The interest rate disclosed must be the rate that applies to the transaction at consummation, or, if not yet set, the rate in effect at the time the Loan Estimate is issued. For a fixed-rate loan, the 'Can this amount increase after closing?' indicator must be 'NO.' For an adjustable-rate loan, the indicator must be 'YES,' and the maximum interest rate that can apply over the life of the loan must also be disclosed. For a loan with rate adjustments at defined intervals, the first adjustment cap and lifetime cap must be disclosed."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The interest rate is one of the most material disclosures on the Loan Estimate — it directly drives the P&I payment, the APR, and the Total Interest Percentage, and it triggers the rate lock re-disclosure obligation when changed from a floating rate. Consumers rely on the disclosed rate to compare competing loan offers and to understand their long-term cost of credit. A rate that does not match the lock confirmation or the final note creates an unresolvable inconsistency between the disclosed and actual cost of the loan.",
+    "how_reviewed": "Examiners compare the disclosed interest rate against the rate lock confirmation document and the final executed promissory note. For transactions where the rate was locked after the initial LE, examiners verify that a revised LE reflecting the locked rate was issued within three business days and that only rate-dependent charges were updated. Examiners also confirm the 'Can this rate increase after closing?' indicator is consistent with the actual loan product type.",
+    "common_errors": [
+      {
+        "title": "Disclosed Rate Does Not Match Lock Confirmation",
+        "description": "The interest rate on the Loan Estimate does not match the rate stated in the lock confirmation document in the loan file, indicating the LE was not updated after the rate was set or that the lock terms were subsequently changed without re-disclosure.",
+        "cite": "§1026.37(b)(2)"
+      },
+      {
+        "title": "Increase Indicator Wrong for Loan Product Type",
+        "description": "The 'Can this rate increase after closing?' indicator is marked 'NO' for an adjustable-rate or step-rate loan, or is marked 'YES' for a fixed-rate loan — both misrepresent the rate stability of the product to the consumer.",
+        "cite": "§1026.37(b)(2)"
+      },
+      {
+        "title": "Rate-Dependent Charges Not Updated at Lock",
+        "description": "After the rate was locked, a revised LE was issued but rate-dependent charges such as discount points or origination fees were not updated to reflect the locked rate, leaving the cost disclosure inconsistent with the actual lock economics.",
+        "cite": "§1026.19(e)(3)(iv)(D)"
+      },
+      {
+        "title": "Interest Rate Differs From Executed Note Rate",
+        "description": "The interest rate on the Loan Estimate does not match the note rate in the final executed loan documents, indicating a discrepancy between the disclosed rate and the actual cost of credit at consummation."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Compare Rate Against Lock Confirmation and Note",
+        "description": "Compare the interest rate on the Loan Estimate against the rate lock confirmation and the final promissory note — any discrepancy requires investigation into whether a revised LE was issued and whether rate-dependent charges were properly updated."
+      },
+      {
+        "title": "Verify Revised LE Timing After Rate Lock",
+        "description": "For transactions where the rate was locked after the initial LE, verify that the revised LE was issued within three business days of the lock date and that only rate-dependent charges were updated — non-rate-dependent charge revisions at the same time are a separate finding."
+      },
+      {
+        "title": "Confirm Increase Indicator Matches Product Type",
+        "description": "Check whether the 'Can this rate increase after closing?' indicator is correctly set for the loan product type — this field is frequently auto-populated by the LOS and may not update correctly when the product type changes during origination."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(b)(2)",
+      "label": "Interest Rate — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#b-2"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iv)(D)",
+      "label": "Changed Circumstance — Interest Rate Lock",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-D"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "rate lock after floating",
+      "rate lock expiration and re-lock at new rate"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(D)"
+  },
+  "related_fields": [
+    "1026-37-a-10-rate-lock",
+    "1026-37-a-7-product",
+    "1026-37-b-3-principal-interest"
+  ],
+  "tags": [
+    "loan-terms",
+    "rate",
+    "rate-lock",
+    "fixed-rate",
+    "changed-circumstance"
+  ],
+  "last_updated": "2026-02-27"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "1026-37-j-contact-information",
+  "panel_header": "Contact Information",
+  "regulation": "12 CFR §1026.37(j)",
+  "summary": "Name, address, NMLS ID, and state license information for the creditor, mortgage broker, buyer's real estate broker, seller's real estate broker, and settlement agent. Also includes the individual loan officer's name, NMLS ID, state license ID, and email address.",
+  "navigation": {
+    "section_group": "Contact Information",
+    "field_number": 1,
+    "field_total": 1,
+    "page": 3,
+    "prev_field_id": null,
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Contact Information</strong> table identifies all parties involved in the transaction and provides the information consumers need to verify credentials, ask questions, and follow up after the form is issued.",
+    "cards": [
+      {
+        "title": "Required Parties",
+        "content": "§1026.37(j) requires disclosure of contact information for: (1) the creditor, (2) the mortgage broker if applicable, (3) the buyer's real estate broker if known, (4) the seller's real estate broker if known, and (5) the settlement agent if known. For each party, the creditor must disclose the company name, address, NMLS ID (if applicable), and state license ID. Information for parties that are not yet known at the time the LE is issued may be omitted — there is no obligation to identify a settlement agent or real estate broker unless the information is already known to the creditor."
+      },
+      {
+        "title": "Loan Officer Information",
+        "content": "§1026.37(j) also requires disclosure of the individual loan officer's name, NMLS ID, state license ID, and email address. The individual loan officer NMLS ID is distinct from the company (entity) NMLS ID — both must appear and must correspond to the correct registered identifiers in the NMLS system. If the individual loan officer does not hold an NMLS registration (for example, for certain exempt transactions), the NMLS ID field may be left blank. Email address is required and must be the loan officer's direct contact email."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(j).",
+    "cards": [
+      {
+        "title": "Official Interpretation — Individual vs. Company NMLS IDs",
+        "content": "The creditor must disclose both the company NMLS ID (entity-level registration) and the individual loan officer's NMLS ID as separately registered identifiers in the NMLS Mortgage Industry Registry. Using only the company NMLS ID in the individual loan officer field is a technical violation. These are distinct registrations — the company ID identifies the entity, while the individual ID identifies the licensed person originating the loan. Both must be verifiable through the NMLS Consumer Access database."
+      },
+      {
+        "title": "Official Interpretation — Unknown Parties",
+        "content": "Contact information for parties not yet known at the time the Loan Estimate is issued may be omitted. For example, if the consumer has not yet selected a settlement agent or real estate brokers have not been identified, those fields may be left blank on the initial LE. However, if the information becomes known before the LE is issued — for example, if a purchase contract identifying the real estate brokers has already been executed — the known parties must be included. There is no obligation to issue a revised LE solely because contact information for a previously unknown party becomes available after the initial LE is issued."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Contact Information table ensures that consumers can verify the credentials of every party involved in their transaction and reach out with questions after receiving the disclosure. The individual loan officer NMLS ID is particularly significant because it enables consumers and regulators to confirm that the person originating their loan is properly licensed — a foundational consumer protection under the SAFE Act. Missing or incorrect NMLS IDs undermine the transparency purpose of this section and can expose the institution to findings under both TRID and SAFE Act compliance.",
+    "how_reviewed": "Examiners verify both the company and individual loan officer NMLS IDs against the NMLS Consumer Access database to confirm they correspond to current, valid registrations. State license IDs are checked against applicable state licensing records. Examiners also evaluate whether known parties — such as real estate brokers identified in an executed purchase contract — were properly included on the Loan Estimate, and whether the loan officer email address is an individual direct contact rather than a shared departmental address.",
+    "common_errors": [
+      {
+        "title": "Individual Loan Officer NMLS ID Missing or Incorrect",
+        "description": "The individual loan officer NMLS ID is blank, transposed, or replaced with the company NMLS ID — both the entity-level and individual-level NMLS IDs are required and must correspond to separately registered identifiers in the NMLS system.",
+        "cite": "§1026.37(j)"
+      },
+      {
+        "title": "Known Party Contact Information Omitted",
+        "description": "Contact information for a settlement agent or real estate broker that was already identified in the executed purchase contract or otherwise known to the creditor at the time of disclosure was omitted from the Loan Estimate."
+      },
+      {
+        "title": "State License ID Missing Where Required",
+        "description": "The state license ID is missing for parties in states that require separate state licensing registration in addition to federal NMLS registration, creating an incomplete disclosure in jurisdictions where both identifiers are required."
+      },
+      {
+        "title": "Shared Email Address Used Instead of Direct Contact",
+        "description": "The loan officer email address field is populated with a shared departmental or team inbox rather than the individual loan officer's direct contact email, depriving the consumer of a direct line of communication with the person originating their loan."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Verify NMLS IDs Against Consumer Access Database",
+        "description": "Verify the individual loan officer NMLS ID against the NMLS Consumer Access database (nmlsconsumeraccess.org) as a standard pre-disclosure quality check — this quickly identifies a transposed or incorrect ID before the form is issued to the consumer."
+      },
+      {
+        "title": "Capture Party Information at Loan Intake",
+        "description": "For purchase transactions, add a field in the LOS to capture real estate broker NMLS and license information at loan intake from the purchase contract — omitting known party information when it is available at origination is an avoidable technical violation."
+      },
+      {
+        "title": "Document Unknown Party Status in the Loan File",
+        "description": "If the settlement agent or other parties are not yet selected at time of LE issuance, document that fact in the loan file — this creates a clear record supporting the omission on the initial LE and protects against a later finding that the information was known and withheld."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(j)",
+      "label": "Contact Information — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#j"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": false,
+    "triggers": [],
+    "regulatory_cite": null
+  },
+  "related_fields": [],
+  "tags": [
+    "contact-information",
+    "nmls",
+    "loan-officer",
+    "settlement-agent",
+    "real-estate-broker"
+  ],
+  "last_updated": "2026-03-04"
+}

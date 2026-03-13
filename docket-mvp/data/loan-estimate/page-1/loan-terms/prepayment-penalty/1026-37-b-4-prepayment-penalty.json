@@ -1,0 +1,106 @@
+{
+  "id": "1026-37-b-4-prepayment-penalty",
+  "panel_header": "Prepayment Penalty",
+  "regulation": "12 CFR §1026.37(b)(4)",
+  "summary": "Indicates whether the loan includes a penalty for early payoff. If 'YES,' the maximum penalty amount and end date must be disclosed. A prepayment penalty not disclosed on the LE is a zero-tolerance violation.",
+  "navigation": {
+    "section_group": "Loan Terms",
+    "field_number": 4,
+    "field_total": 5,
+    "page": 1,
+    "prev_field_id": "1026-37-b-3-principal-interest",
+    "next_field_id": "1026-37-b-5-balloon-payment"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Prepayment Penalty</strong> field indicates whether the loan includes a penalty for early payoff. If 'YES,' the maximum penalty amount and the end date of the penalty period must both be disclosed. This is a zero-tolerance item.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(b)(4) requires a 'YES' or 'NO' indication of whether the loan includes a prepayment penalty. If YES, the creditor must also disclose the maximum penalty amount and the date on which the prepayment penalty period ends. For standard fixed-rate conventional loans, this is typically 'NO.'"
+      },
+      {
+        "title": "Zero Tolerance",
+        "content": "A prepayment penalty not disclosed on the LE cannot appear on the Closing Disclosure. This is a zero-tolerance item under §1026.19(e)(3)(i) — no increase is permitted. If the CD reflects a prepayment penalty not shown on any version of the LE, the creditor must cure the violation by absorbing the cost regardless of the amount."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(b)(4).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The prepayment penalty disclosure must accurately reflect whether the transaction includes a prepayment penalty as defined in §1026.32(b)(6)(i). If the loan does not include a prepayment penalty, the creditor discloses 'NO.' If the loan includes a prepayment penalty, the creditor must disclose 'YES' along with the maximum penalty amount and the date on which the penalty period ends. The maximum penalty amount is the highest amount that could be imposed — not a specific amount that applies in every case. A prepayment penalty not disclosed on the Loan Estimate is subject to zero tolerance under §1026.19(e)(3)(i) and cannot be charged to the consumer at consummation."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "A prepayment penalty is a financially significant loan term that can impose substantial costs on consumers who sell, refinance, or pay off their loan early. Because prepayment penalties are subject to zero tolerance, any penalty not disclosed on the Loan Estimate cannot be charged to the consumer at consummation — the creditor must absorb the cost regardless of the amount. Accurate disclosure of this field protects consumers from unexpected early payoff costs and is a key compliance focus for institutions offering portfolio, bridge, or non-QM loan products.",
+    "how_reviewed": "Examiners review the prepayment penalty field on the Loan Estimate against the executed loan documents, including the note and any prepayment addenda, to confirm that the 'YES' or 'NO' indicator accurately reflects the loan terms. When 'YES' is indicated, examiners verify that both the maximum penalty amount and the end date of the penalty period are disclosed. Examiners also conduct a zero-tolerance comparison between the LE and the CD to confirm that no penalty appeared on the CD that was not disclosed on any version of the LE.",
+    "common_errors": [
+      {
+        "title": "Prepayment Penalty Disclosed as 'NO' When Present",
+        "description": "The Loan Estimate indicates 'NO' for prepayment penalty when the loan program or executed note includes a prepayment penalty by default, resulting in a zero-tolerance violation that requires the creditor to absorb the penalty cost at consummation.",
+        "cite": "§1026.19(e)(3)(i)"
+      },
+      {
+        "title": "Maximum Penalty Amount or End Date Missing",
+        "description": "The prepayment penalty field is marked 'YES' but the maximum penalty amount or the end date of the penalty period — both of which are required — are missing from the disclosure.",
+        "cite": "§1026.37(b)(4)"
+      },
+      {
+        "title": "Penalty on CD Not Disclosed on Any LE Version",
+        "description": "A prepayment penalty appears on the Closing Disclosure that was not disclosed on any version of the Loan Estimate, constituting a zero-tolerance violation that requires a cure payment to the consumer.",
+        "cite": "§1026.19(e)(3)(i)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Build a Checklist for Penalty-Prone Loan Programs",
+        "description": "For loan programs that commonly include prepayment penalties — such as certain portfolio products, hard-money, or bridge loans — build a pre-disclosure checklist step to confirm the field is reviewed against the loan agreement before every Loan Estimate is issued."
+      },
+      {
+        "title": "Verify Both Required Elements When YES Is Marked",
+        "description": "When the field shows 'YES,' verify that both the maximum penalty amount and the end date of the penalty period are present and accurate — omitting either is a technical violation even when the 'YES' indicator itself is correctly marked."
+      },
+      {
+        "title": "Include This Field in Zero-Tolerance CD Sweep",
+        "description": "Include the prepayment penalty field in every standard zero-tolerance sweep when comparing the Loan Estimate to the Closing Disclosure — any discrepancy between what was disclosed on the LE and what appears on the CD requires immediate escalation and cure analysis."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(b)(4)",
+      "label": "Prepayment Penalty — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#b-4"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(i)",
+      "label": "Zero Tolerance — Charges That Cannot Increase",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-i"
+    }
+  ],
+  "tolerance": {
+    "category": "zero",
+    "description": "If a prepayment penalty exists and is not disclosed on the LE, it cannot be added on the Closing Disclosure. Omission constitutes a zero-tolerance violation requiring cure.",
+    "cure_threshold": null,
+    "regulatory_cite": "§1026.19(e)(3)(i)"
+  },
+  "changed_circumstance": {
+    "can_trigger_revised_le": false,
+    "triggers": [],
+    "regulatory_cite": null
+  },
+  "related_fields": [
+    "1026-37-b-1-loan-amount",
+    "1026-37-a-7-product",
+    "1026-37-a-8-loan-type"
+  ],
+  "tags": [
+    "loan-terms",
+    "prepayment-penalty",
+    "zero-tolerance",
+    "tolerances"
+  ],
+  "last_updated": "2026-02-27"
+}

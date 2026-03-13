@@ -1,0 +1,119 @@
+{
+  "id": "1026-37-g-calculating-cash-to-close",
+  "panel_header": "Calculating Cash to Close",
+  "regulation": "12 CFR §1026.37(g)",
+  "summary": "A line-by-line table reconciling the loan amount, total closing costs, down payment, deposit, funds for borrower, seller credits, and adjustments to arrive at the estimated cash to close. Must match the summary figure on page 1 exactly.",
+  "navigation": {
+    "section_group": "Calculating Cash to Close",
+    "field_number": 1,
+    "field_total": 1,
+    "page": 2,
+    "prev_field_id": null,
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Calculating Cash to Close</strong> table provides a line-by-line reconciliation of how the estimated cash to close is derived. It must match the summary figure on page 1 exactly and serves as the primary source for the cash-to-close calculation on the Closing Disclosure.",
+    "cards": [
+      {
+        "title": "Required Table Structure",
+        "content": "§1026.37(g) requires the table to include: (1) loan amount, (2) total closing costs net of lender credits, (3) estimated cash to close, and for purchase transactions: (4) down payment, (5) deposit, (6) funds for borrower, (7) seller credits, and (8) adjustments and other credits. Each row must show the estimated amount. The final Estimated Cash to Close line must reconcile exactly with the summary figure disclosed on page 1 under §1026.37(d)(2)."
+      },
+      {
+        "title": "Lender Credits",
+        "content": "§1026.37(g)(6)(ii) requires lender credits to be disclosed as a separate negative line item in the table. Lender credits are subject to a tolerance restriction — they may not <strong>decrease</strong> from the LE to the CD. A reduction in a previously disclosed lender credit constitutes a tolerance violation under §1026.19(e)(3)(i), even if all individual fees remained within tolerance. Lender credits that increase from LE to CD (because the consumer's rate increased after the LE) do not constitute a violation."
+      },
+      {
+        "title": "Page 1 Reconciliation",
+        "content": "The Estimated Cash to Close figure in this table must match the summary figure on page 1 under §1026.37(d)(2). This is a mathematical check — any discrepancy between the two pages is an automatic compliance finding regardless of cause or amount. For revised LEs, both the page 1 summary and the page 2 table must be updated simultaneously whenever a component figure changes."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(g).",
+    "cards": [
+      {
+        "title": "Official Interpretation — Lender Credits",
+        "content": "A lender credit is any credit offered by the creditor to offset closing costs, typically offered in exchange for a higher interest rate. Once a lender credit is disclosed on the LE, it cannot be reduced on the CD. If the consumer's rate is reduced after the LE (for example, at rate lock), the lender credit may be adjusted only if a valid changed circumstance under §1026.19(e)(3)(iv)(D) permits issuance of a revised LE with updated figures. The reduction must be reflected on the revised LE before the credit can be reduced on the CD. A lender credit that increases from LE to CD — because the rate increased after lock — does not constitute a tolerance violation."
+      },
+      {
+        "title": "Official Interpretation — Seller Credits",
+        "content": "Seller credits known at the time the LE is issued must be disclosed in the Calculating Cash to Close table. If the seller credit is not yet determined at the time of the LE — for example, because no purchase contract has been executed — the creditor may leave the line blank or enter $0. A seller credit that appears for the first time on the CD does not constitute a tolerance violation under §1026.19(e)(3) because it reduces, rather than increases, the charges to the consumer. The deposit line must reflect any earnest money or other funds the consumer has already paid toward the transaction."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Calculating Cash to Close table is the authoritative source for the cash-to-close figure that appears in summary on page 1, and it must balance to that figure exactly. It is also the section where lender credits are formally recorded — and because a reduction in a disclosed lender credit constitutes a zero-tolerance violation, this table is a critical focus of the LE-to-CD comparison. The table's line-by-line structure gives examiners a complete view of how the consumer's funds at closing were derived, making errors here difficult to attribute to good-faith estimation.",
+    "how_reviewed": "Examiners perform the page 1-to-page 2 reconciliation as a first step, then review each line of the Calculating Cash to Close table against supporting file documents: the purchase contract for the sale price and deposit, the fee disclosures for closing costs, and the lender's rate sheet for lender credits. Lender credit amounts on the CD are compared against the LE to confirm they equal or exceed the originally disclosed credit. Earnest money deposits are verified against receipts or the purchase contract.",
+    "common_errors": [
+      {
+        "title": "Page 2 Total Does Not Match Page 1 Summary",
+        "description": "The cash-to-close total in the Calculating Cash to Close table on page 2 does not match the Estimated Cash to Close figure on page 1 — the most common arithmetic reconciliation failure in TRID file reviews.",
+        "cite": "§1026.37(d)(2)"
+      },
+      {
+        "title": "Lender Credit Reduced on CD Without Revised LE",
+        "description": "The lender credit amount on the Closing Disclosure is less than the amount disclosed on the Loan Estimate without a corresponding valid changed circumstance and revised Loan Estimate, constituting a zero-tolerance violation even if all individual fees are within tolerance.",
+        "cite": "§1026.19(e)(3)(i)"
+      },
+      {
+        "title": "Earnest Money Deposit Not Reflected in Deposit Line",
+        "description": "The earnest money deposit already paid by the consumer is not listed in the deposit line of the Calculating Cash to Close table, causing the disclosed cash-to-close to overstate the actual funds the consumer needs to bring to closing."
+      },
+      {
+        "title": "Known Seller Credits Omitted From Initial LE",
+        "description": "Seller credits from an executed purchase contract were known at the time of the initial Loan Estimate but were omitted from the table, causing the disclosed cash-to-close to appear materially higher than it would be at closing."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Begin Every File Review With the Reconciliation Check",
+        "description": "Perform the page 1 vs. page 2 reconciliation check as the first step of every file review — trace the Calculating Cash to Close total to the page 1 summary to confirm they match before examining individual line items, as a mismatch makes all downstream analysis unreliable."
+      },
+      {
+        "title": "Verify Lender Credit Did Not Decrease on CD",
+        "description": "When a lender credit appears on both the Loan Estimate and the Closing Disclosure, confirm the CD amount equals or exceeds the LE amount — a reduced lender credit is a zero-tolerance violation frequently overlooked in standard fee-level tolerance sweeps."
+      },
+      {
+        "title": "Confirm Deposit Line Against Purchase Contract",
+        "description": "For purchase transactions, verify the deposit line against the earnest money receipt or purchase contract — the disclosure should reflect what the consumer has already paid toward the transaction, not what they will owe at closing."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(g)",
+      "label": "Calculating Cash to Close — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#g"
+    },
+    {
+      "cite": "12 CFR § 1026.37(d)(2)",
+      "label": "Estimated Cash to Close — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#d-2"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "loan amount change",
+      "closing cost change",
+      "lender credit change",
+      "seller credit change"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)"
+  },
+  "related_fields": [
+    "1026-37-d-2-estimated-cash-to-close",
+    "1026-37-e-loan-costs",
+    "1026-37-f-other-costs"
+  ],
+  "tags": [
+    "cash-to-close",
+    "page-2-summary",
+    "lender-credits",
+    "seller-credits",
+    "deposit",
+    "tolerances"
+  ],
+  "last_updated": "2026-03-04"
+}

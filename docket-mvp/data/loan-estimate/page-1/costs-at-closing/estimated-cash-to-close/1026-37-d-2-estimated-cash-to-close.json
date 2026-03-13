@@ -1,0 +1,108 @@
+{
+  "id": "1026-37-d-2-estimated-cash-to-close",
+  "panel_header": "Estimated Cash to Close",
+  "regulation": "12 CFR §1026.37(d)(2)",
+  "summary": "The estimated total funds the borrower must bring to closing. Derived from the Calculating Cash to Close table on page 2 and must match that table exactly. Accounts for down payment, closing costs, deposits, and credits.",
+  "navigation": {
+    "section_group": "Costs at Closing",
+    "field_number": 2,
+    "field_total": 2,
+    "page": 1,
+    "prev_field_id": "1026-37-d-1-estimated-closing-costs",
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Estimated Cash to Close</strong> is the total funds the consumer must bring to closing. It is derived directly from the Calculating Cash to Close table under §1026.37(g) on page 2 and must match that table exactly.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(d)(2) requires disclosure of the estimated cash to close — the total funds the consumer must bring to consummation. This figure is derived from the Calculating Cash to Close table on page 2 (§1026.37(g)) and must reflect the loan amount, closing costs, down payment, earnest money deposits already paid, and any applicable credits."
+      },
+      {
+        "title": "Page 2 Reconciliation",
+        "content": "The Estimated Cash to Close on page 1 must match exactly the total shown in the Calculating Cash to Close table on page 2. Discrepancies indicate either a calculation error or a stale disclosure that was not updated after a change to one of the component figures."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(d)(2).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The estimated cash to close is the sum of the down payment, total closing costs, and any other amounts the consumer must pay at consummation, reduced by any amounts already paid (such as an earnest money deposit), seller credits, and other credits to be applied at closing. This figure must be derived from and consistent with the Calculating Cash to Close table under §1026.37(g). Any change to a component of that table — including changes to the loan amount, closing costs, or credits — must be reflected in an updated Estimated Cash to Close on a revised Loan Estimate."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Estimated Cash to Close is the bottom-line figure consumers use to determine how much money they need to bring to closing, making it one of the most consequential disclosures on the Loan Estimate. It must match exactly the figure derived from the Calculating Cash to Close table on page 2, and any discrepancy between the two is an automatic compliance finding. An inflated or understated cash-to-close figure — from omitted deposits, credits, or stale inputs — can disrupt a consumer's closing preparation and erode trust in the disclosure.",
+    "how_reviewed": "Examiners trace the cash-to-close figure from the page 1 summary to the page 2 Calculating Cash to Close table as a standard reconciliation step, confirming the two figures match exactly. For purchase transactions, examiners verify that earnest money deposits already paid by the consumer are reflected as a deduction, and that known seller concessions are included. Examiners also review revised LEs to confirm the cash-to-close was updated whenever a component figure changed.",
+    "common_errors": [
+      {
+        "title": "Page 1 and Page 2 Cash-to-Close Figures Differ",
+        "description": "The Estimated Cash to Close on page 1 does not match the total in the Calculating Cash to Close table on page 2 — the most common reconciliation failure in TRID examinations, arising from component changes that were not fully propagated across both pages.",
+        "cite": "§1026.37(d)(2)"
+      },
+      {
+        "title": "Earnest Money Deposit Not Reflected as Deduction",
+        "description": "Earnest money or other deposits already paid by the consumer are not reflected in the Calculating Cash to Close table, causing the disclosed cash-to-close to appear materially higher than the actual funds the consumer needs at closing."
+      },
+      {
+        "title": "Known Seller Credits Omitted From Calculation",
+        "description": "Seller credits from an executed purchase contract that were known at the time of disclosure are omitted from the Calculating Cash to Close table, overstating the consumer's anticipated closing funds obligation."
+      },
+      {
+        "title": "Cash-to-Close Not Updated After Component Change",
+        "description": "A change to the loan amount, closing costs, or credits on a revised Loan Estimate was not reflected in an updated cash-to-close figure, leaving the page 1 summary stale relative to the actual transaction economics."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Trace Cash-to-Close Across Both Pages First",
+        "description": "Trace the cash-to-close figure from the page 1 summary to the page 2 Calculating Cash to Close table as the first step of every file review — any mismatch between the two is always a finding, regardless of magnitude, and should be noted before examining individual components."
+      },
+      {
+        "title": "Verify Earnest Money Deposit Is Deducted",
+        "description": "For purchase transactions, verify that the earnest money deposit is listed in the Calculating Cash to Close table and properly subtracted — its omission can cause the disclosed cash-to-close to appear materially higher than the actual amount due at closing."
+      },
+      {
+        "title": "Check for Known Seller Concessions at Origination",
+        "description": "Check whether seller concessions from the executed purchase contract are reflected in the initial LE — failure to include known seller concessions causes the cash-to-close to appear artificially high and may indicate an incomplete good-faith estimate."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(d)(2)",
+      "label": "Estimated Cash to Close — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#d-2"
+    },
+    {
+      "cite": "12 CFR § 1026.37(g)",
+      "label": "Calculating Cash to Close — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#g"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "loan amount change",
+      "closing cost change",
+      "down payment change",
+      "seller concession change"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)"
+  },
+  "related_fields": [
+    "1026-37-d-1-estimated-closing-costs",
+    "1026-37-b-1-loan-amount",
+    "1026-37-g-calculating-cash-to-close"
+  ],
+  "tags": [
+    "costs-at-closing",
+    "cash-to-close",
+    "page-2-summary",
+    "down-payment"
+  ],
+  "last_updated": "2026-02-27"
+}

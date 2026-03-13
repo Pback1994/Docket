@@ -1,0 +1,96 @@
+{
+  "id": "1026-37-a-2-applicants",
+  "panel_header": "Applicants",
+  "regulation": "12 CFR §1026.37(a)(5)",
+  "summary": "The name and mailing address of each consumer applying for the loan. For co-borrowers, all names must appear. The address must match what was provided on the application.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 2,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-1-date-issued",
+    "next_field_id": "1026-37-a-3-property"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Applicants</strong> field discloses the name and mailing address of each consumer applying for the loan. For co-borrowers, all names must appear. The mailing address must reflect the address provided on the application.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(5) requires the name and mailing address of the consumer(s) applying for the loan. For joint applicants, all names must be listed. The mailing address is used for delivery purposes and must match the address provided on the loan application."
+      },
+      {
+        "title": "Co-Borrower Rule",
+        "content": "When multiple consumers are applying, all names must appear on the Loan Estimate. Omitting a co-borrower's name is not merely an administrative error — it can affect delivery obligations and the validity of the disclosure as it relates to each applicant's rights under TRID."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(5).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "For transactions with more than one consumer, the names of all consumers applying for the credit must be disclosed. The mailing address of the primary applicant or the address to which the Loan Estimate is being delivered may be used when consumers have different mailing addresses. If the address changes after the initial Loan Estimate is issued but before consummation, a revised Loan Estimate need not be issued solely to reflect an updated mailing address."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "Accurate disclosure of applicant names ensures that each consumer applying for credit is properly identified on the legal disclosure and receives the consumer protections afforded by TRID. Omitting a co-borrower or using a name that does not match the loan application can affect delivery obligations and create ambiguity in the tolerance-cure chain from the Loan Estimate to the Closing Disclosure. This field also serves as one of the primary identifiers used to match disclosure versions during examination.",
+    "how_reviewed": "Examiners cross-reference the names on the Loan Estimate against the signed loan application (Form 1003) to verify that all co-borrowers are listed using their legal names as they appear on the application. For transactions with multiple applicants, examiners confirm that each applicant's name appears on both the initial LE and any revised LEs. The mailing address is also compared against the application to identify stale or incorrect address information.",
+    "common_errors": [
+      {
+        "title": "Co-Borrower Name Missing From Disclosure",
+        "description": "Only the primary borrower's name is listed on the Loan Estimate when a co-borrower is also applying for credit, creating a disclosure that does not accurately identify all parties to the transaction.",
+        "cite": "§1026.37(a)(5)"
+      },
+      {
+        "title": "Nickname or Abbreviated Name Used",
+        "description": "The Loan Estimate uses a nickname or abbreviated name rather than the applicant's legal name as it appears on the signed loan application, creating a mismatch between the disclosure and the underlying application documents."
+      },
+      {
+        "title": "Stale Mailing Address on Disclosure",
+        "description": "The mailing address on the Loan Estimate was not updated after the consumer provided a corrected address on the application, which can affect delivery validity and the applicability of the three-business-day mail receipt presumption."
+      },
+      {
+        "title": "Name Mismatch Between LE and Closing Disclosure",
+        "description": "Applicant names differ between the Loan Estimate and the Closing Disclosure, creating ambiguity about which LE version governs the tolerance baseline and complicating the LE-to-CD matching process during examination."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Cross-Reference Names Against Signed 1003",
+        "description": "Cross-reference the names on the Loan Estimate against the signed loan application (Form 1003) to verify all co-borrowers are listed with their exact legal names — the LE and application should match precisely to avoid identification discrepancies."
+      },
+      {
+        "title": "Verify Mailing Address Matches Application",
+        "description": "Check whether the mailing address on the Loan Estimate matches the address confirmed on the application, paying particular attention to refinance transactions where borrowers may have recently relocated and provided an updated address."
+      },
+      {
+        "title": "Use Name and Loan ID Together for CD Matching",
+        "description": "When reviewing the Closing Disclosure for tolerance compliance, use applicant names and the Loan ID together to confirm the LE-to-CD match — name discrepancies can create ambiguity about which Loan Estimate version governs the tolerance analysis."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(5)",
+      "label": "Applicant Information — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-5"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": false,
+    "triggers": [],
+    "regulatory_cite": null
+  },
+  "related_fields": [
+    "1026-37-a-3-property",
+    "1026-37-a-9-loan-id"
+  ],
+  "tags": [
+    "general-information",
+    "applicant-information",
+    "identity"
+  ],
+  "last_updated": "2026-02-27"
+}

@@ -1,0 +1,117 @@
+{
+  "id": "1026-37-l-other-considerations",
+  "panel_header": "Other Considerations",
+  "regulation": "12 CFR §1026.37(l)",
+  "summary": "Six required disclosure statements: Appraisal (consumer's right to receive a copy), Assumption (whether the loan can be assumed by a future buyer), Homeowner's Insurance, Late Payment (grace period and fee), Refinancing (potential impact), and Servicing (transfer intent).",
+  "navigation": {
+    "section_group": "Other Considerations",
+    "field_number": 1,
+    "field_total": 1,
+    "page": 3,
+    "prev_field_id": null,
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Other Considerations</strong> section contains six separate disclosure statements, each required by §1026.37(l). Each statement uses specific language designed to inform the consumer of key loan features and borrower rights.",
+    "cards": [
+      {
+        "title": "Appraisal and Assumption",
+        "content": "§1026.37(l)(1) requires the creditor to state that the consumer may receive a copy of any appraisal used in connection with this loan, pursuant to the right under the Equal Credit Opportunity Act (ECOA) §1002.14. The creditor must also inform the consumer of the timeline for receiving the appraisal. §1026.37(l)(2) requires a statement of whether the loan may be assumed by a subsequent purchaser at the original terms. For conventional fixed-rate loans, this is typically 'No' due to the due-on-sale clause. FHA and VA loans may be assumable subject to conditions and must be disclosed accordingly."
+      },
+      {
+        "title": "Homeowner's Insurance and Late Payment",
+        "content": "§1026.37(l)(3) requires disclosure of whether the creditor requires the consumer to obtain homeowner's insurance from a specific provider. For most loans, the consumer may select any provider that meets the creditor's coverage requirements. §1026.37(l)(4) requires disclosure of when a payment is considered late and the applicable late payment fee. The disclosure must specify the exact grace period in days (e.g., 'If your payment is more than 15 days late') and the fee as a specific dollar amount or percentage of the overdue payment. The disclosed terms must match the loan note exactly."
+      },
+      {
+        "title": "Refinancing and Servicing",
+        "content": "§1026.37(l)(5) requires a statement that refinancing this loan may result in higher monthly payments or a longer term, and that the consumer should consult the creditor before attempting to refinance. §1026.37(l)(6) requires disclosure of whether the creditor intends to service the loan after consummation or transfer servicing to another servicer. The servicing disclosure reflects the creditor's intent at origination and is not a binding commitment. A creditor that routinely sells servicing rights after closing must disclose that servicing may be transferred."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(l).",
+    "cards": [
+      {
+        "title": "Official Interpretation — Assumption Eligibility",
+        "content": "For conventional fixed-rate loans, the creditor must disclose 'No' for assumption because standard conventional loan programs include a due-on-sale clause that prohibits assumption without the lender's consent. For FHA loans, the correct disclosure is that the loan may be assumed subject to the lender's conditions — FHA loans are generally assumable. For VA loans, assumption is permitted subject to VA and lender approval. An incorrect assumption disclosure for an FHA loan — stating 'No' when the loan is assumable — is a violation of §1026.37(l)(2). The disclosure must reflect the actual terms of the loan program."
+      },
+      {
+        "title": "Official Interpretation — Servicing Transfer Disclosure",
+        "content": "The servicing disclosure under §1026.37(l)(6) requires the creditor to state whether it intends to service the loan or transfer servicing after consummation. This is distinct from the servicing transfer notice required under RESPA §6 after consummation. The LE disclosure reflects the creditor's intent at origination. A creditor that routinely sells servicing rights after closing — for example, by selling loans into the secondary market — should not disclose that servicing will not be transferred. The disclosure must be consistent with the creditor's actual practice."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Other Considerations section contains six separate required disclosures — each serving a distinct consumer protection purpose — ranging from the right to receive an appraisal copy to the institution's intent to transfer loan servicing. Errors in this section are often product-level or systemic: an LOS configured to always mark assumption as 'No' will generate a violation on every FHA or VA loan in the population. The late payment and servicing disclosures must also match the executed note terms and the institution's actual practice, making them subject to both TRID and broader consumer protection review.",
+    "how_reviewed": "Examiners review each of the six disclosures against supporting loan file documentation. The assumption disclosure is checked against the loan program terms. The late payment grace period and fee are compared to the executed promissory note. The appraisal notice is verified for presence on first-lien transactions. The servicing disclosure is evaluated against the institution's documented servicing retention or sale practice. For high-volume examinations, examiners may pull loan-level data to identify systemic errors in assumption or servicing disclosures across the population.",
+    "common_errors": [
+      {
+        "title": "Assumption Disclosure Wrong for FHA or VA Loan",
+        "description": "The assumption field incorrectly states 'No' for an FHA or VA loan that is assumable subject to conditions — a product-level error common in LOS systems that default to 'No' for all loan types regardless of program.",
+        "cite": "§1026.37(l)(2)"
+      },
+      {
+        "title": "Late Payment Terms Inconsistent With Executed Note",
+        "description": "The late payment grace period or fee amount disclosed on the Loan Estimate does not match the corresponding terms in the executed promissory note, creating a discrepancy between the consumer's disclosure and their actual contractual obligation.",
+        "cite": "§1026.37(l)(4)"
+      },
+      {
+        "title": "Appraisal Delivery Notice Missing From First-Lien LE",
+        "description": "The required notice of the consumer's right to receive a copy of any appraisal is missing from the Loan Estimate for a first-lien mortgage transaction subject to ECOA §1002.14, regardless of whether an appraisal was ordered at time of issuance.",
+        "cite": "§1026.37(l)(1)"
+      },
+      {
+        "title": "Servicing Disclosure Inconsistent With Actual Practice",
+        "description": "The servicing disclosure states that the loan will not be transferred when the creditor's standard practice is to sell loans — and therefore servicing rights — into the secondary market shortly after closing, creating a misleading disclosure about the consumer's future servicer.",
+        "cite": "§1026.37(l)(6)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Configure LOS Assumption Field by Loan Program",
+        "description": "Create a product-level LOS configuration for the assumption field that automatically populates based on loan type — Conventional as 'No,' FHA and VA as 'Yes — subject to conditions' — because manual entry of this field creates systematic error risk across high-volume origination operations."
+      },
+      {
+        "title": "Verify Late Payment Terms Against the Final Note",
+        "description": "Verify the late payment grace period and fee amount against the final loan note as a standard pre-closing quality check — a last-minute change to the note terms that differs from the LE may require a corrected disclosure depending on when the change occurred."
+      },
+      {
+        "title": "Align Servicing Disclosure With Documented Practice",
+        "description": "If your institution regularly sells servicing rights after closing, use consistent language in all LE disclosures reflecting that intent — stating that servicing will not be transferred when the institution's standard practice is to sell creates audit exposure when a subsequent sale occurs shortly after consummation."
+      },
+      {
+        "title": "Test Assumption Field Across All Loan Types in Sample",
+        "description": "When reviewing a file population that includes multiple loan types, specifically check the assumption field on FHA and VA loans for the 'No' default error — this is one of the most reliable systemic findings to identify through cross-product analysis of a loan file sample."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(l)",
+      "label": "Other Considerations — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#l"
+    },
+    {
+      "cite": "12 CFR § 1002.14",
+      "label": "ECOA — Right to Receive Appraisal Copies",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1002/14/"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": false,
+    "triggers": [],
+    "regulatory_cite": null
+  },
+  "related_fields": [],
+  "tags": [
+    "other-considerations",
+    "appraisal",
+    "assumption",
+    "homeowners-insurance",
+    "late-payment",
+    "refinancing",
+    "servicing"
+  ],
+  "last_updated": "2026-03-04"
+}

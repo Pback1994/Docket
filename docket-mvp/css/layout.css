@@ -1,0 +1,23 @@
+/* Page layout: document view + annotation panel */
+
+.app-container {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.document-column {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  flex: 1;
+}
+
+#annotation-panel {
+  flex: 1;
+  border-left: 1px solid #ddd;
+  padding-left: 1rem;
+}

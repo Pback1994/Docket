@@ -1,0 +1,111 @@
+{
+  "id": "1026-37-b-5-balloon-payment",
+  "panel_header": "Balloon Payment",
+  "regulation": "12 CFR §1026.37(b)(5)",
+  "summary": "Indicates whether the loan requires a large final payment at maturity. For standard fixed-rate, fully amortizing loans this is 'NO.' A balloon payment not disclosed on the LE cannot appear on the Closing Disclosure.",
+  "navigation": {
+    "section_group": "Loan Terms",
+    "field_number": 5,
+    "field_total": 5,
+    "page": 1,
+    "prev_field_id": "1026-37-b-4-prepayment-penalty",
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Balloon Payment</strong> field indicates whether the loan requires a large final payment at maturity. For standard fixed-rate, fully amortizing loans this is 'NO.' A balloon payment not disclosed on the LE is a zero-tolerance violation.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(b)(5) requires a 'YES' or 'NO' indication of whether the loan includes a balloon payment. If YES, the creditor must also disclose the balloon payment amount and the date it is due. For a standard fixed-rate fully amortizing mortgage, this field must be 'NO.'"
+      },
+      {
+        "title": "Zero Tolerance",
+        "content": "Like the prepayment penalty, a balloon payment not disclosed on the LE is subject to zero tolerance under §1026.19(e)(3)(i). It cannot appear on the Closing Disclosure without a corresponding LE disclosure. Creditors offering balloon products must ensure this field is accurately populated at each disclosure event."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(b)(5).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "A balloon payment is a payment that is more than two times the amount of the regular periodic payment. The creditor must disclose 'YES' if the transaction includes a balloon payment, along with the amount of the balloon payment and the due date. For a fully amortizing fixed-rate loan, there is no balloon payment and the creditor must disclose 'NO.' A balloon payment not disclosed on any version of the Loan Estimate is subject to zero tolerance under §1026.19(e)(3)(i) — it cannot be charged to the consumer at consummation."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "A balloon payment represents one of the most financially significant features a loan can have — a large lump-sum obligation at maturity that most consumers must refinance or pay off in full. Because balloon payments are subject to zero tolerance, an undisclosed balloon cannot appear on the Closing Disclosure and cannot be charged to the consumer. The failure to disclose a balloon payment is one of the most material TRID violations possible, both for its financial impact on consumers and its regulatory severity.",
+    "how_reviewed": "Examiners review the balloon payment field on the Loan Estimate against the amortization schedule, the executed note, and the Projected Payments table to confirm the 'YES' or 'NO' indicator is accurate. When 'YES' is indicated, examiners verify that both the balloon payment amount and the due date are disclosed and consistent with the amortization schedule. Examiners also conduct a zero-tolerance comparison between the LE and the CD to confirm no balloon payment appeared at closing that was not previously disclosed.",
+    "common_errors": [
+      {
+        "title": "Balloon Mortgage Disclosed as 'NO'",
+        "description": "The Loan Estimate marks 'NO' for balloon payment for a loan product that is a balloon mortgage — most common for short-term portfolio, commercial balloon, or bridge loan products — resulting in a zero-tolerance violation at consummation.",
+        "cite": "§1026.19(e)(3)(i)"
+      },
+      {
+        "title": "Balloon Amount or Due Date Missing When YES Marked",
+        "description": "The balloon payment field is marked 'YES' but the required balloon payment amount or due date is missing — both elements must be disclosed when a balloon payment exists.",
+        "cite": "§1026.37(b)(5)"
+      },
+      {
+        "title": "Projected Payments Table Inconsistent With Balloon",
+        "description": "The Projected Payments table does not reflect the balloon payment in the final payment period, creating an inconsistency between the Loan Terms table disclosure and the payment schedule disclosed to the consumer."
+      },
+      {
+        "title": "Balloon Payment Appearing on CD Without LE Disclosure",
+        "description": "A balloon payment appears on the Closing Disclosure that was not disclosed on any version of the Loan Estimate, constituting a zero-tolerance violation requiring a cure regardless of the balloon amount.",
+        "cite": "§1026.19(e)(3)(i)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Verify LOS Defaults for Balloon Loan Programs",
+        "description": "For balloon loan products, verify that the LOS automatically populates the balloon payment field as 'YES' — a system that defaults to 'NO' for all loan types creates systematic non-disclosure risk for every balloon product originated on that platform."
+      },
+      {
+        "title": "Cross-Reference Balloon Amount Against Amortization Schedule",
+        "description": "When 'YES' is indicated, cross-reference the disclosed balloon amount against the amortization schedule in the loan file to confirm the disclosed amount matches the actual final payment obligation at maturity."
+      },
+      {
+        "title": "Include Balloon Payment in Zero-Tolerance CD Sweep",
+        "description": "Include the balloon payment field in every standard zero-tolerance sweep when comparing the Loan Estimate to the Closing Disclosure — an undisclosed balloon appearing at closing is a material violation that consumers are particularly likely to escalate as a complaint."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(b)(5)",
+      "label": "Balloon Payment — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#b-5"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(i)",
+      "label": "Zero Tolerance — Charges That Cannot Increase",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-i"
+    }
+  ],
+  "tolerance": {
+    "category": "zero",
+    "description": "A balloon payment not disclosed on the LE cannot appear on the Closing Disclosure. Omission constitutes a zero-tolerance violation requiring cure.",
+    "cure_threshold": null,
+    "regulatory_cite": "§1026.19(e)(3)(i)"
+  },
+  "changed_circumstance": {
+    "can_trigger_revised_le": false,
+    "triggers": [],
+    "regulatory_cite": null
+  },
+  "related_fields": [
+    "1026-37-a-5-loan-term",
+    "1026-37-b-1-loan-amount",
+    "1026-37-c-projected-payments"
+  ],
+  "tags": [
+    "loan-terms",
+    "balloon-payment",
+    "zero-tolerance",
+    "tolerances",
+    "amortization"
+  ],
+  "last_updated": "2026-02-27"
+}

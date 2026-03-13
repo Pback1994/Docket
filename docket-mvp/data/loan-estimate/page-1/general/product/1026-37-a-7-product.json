@@ -1,0 +1,109 @@
+{
+  "id": "1026-37-a-7-product",
+  "panel_header": "Product",
+  "regulation": "12 CFR §1026.37(a)(10)",
+  "summary": "The loan product describes the interest rate structure. For a fixed-rate mortgage, this field must read 'Fixed Rate.' The product disclosure governs which Loan Terms table indicators must be marked 'NO.'",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 7,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-6-purpose",
+    "next_field_id": "1026-37-a-8-loan-type"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Product</strong> field describes the interest rate structure of the loan. For a fixed-rate mortgage, this must read 'Fixed Rate.' The product disclosure governs which Loan Terms table indicators must be marked 'NO.'",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(10) requires disclosure of the loan product, describing whether the rate is fixed, adjustable, or a step rate. For a fixed-rate loan, the product must be disclosed as 'Fixed Rate.' The product must be consistent with the rate-type indicators in the Loan Terms table under §1026.37(b)."
+      },
+      {
+        "title": "Fixed-Rate Implications",
+        "content": "For a Fixed Rate product, all three 'Can this amount increase after closing?' indicators in the Loan Terms table must be marked 'NO.' If the product field is incorrect, the Loan Terms indicators will likely also be wrong — compounding the error across multiple sections of the form."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(10).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The product description must accurately reflect the rate feature of the loan. For a fixed-rate loan, the product is 'Fixed Rate.' For an adjustable-rate loan, the product must include the adjustment period (e.g., '5/1 Adjustable Rate'). For a step rate loan, the product is 'Step Rate.' If the loan has an interest-only feature, that must also be noted in the product description (e.g., 'Fixed Rate, Interest Only'). The product description must be consistent with the disclosures required under §1026.37(b) regarding whether amounts can increase after closing."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The product disclosure is the consumer-facing description of the loan's rate structure and directly governs which 'Can this amount increase after closing?' indicators in the Loan Terms table must be marked 'NO.' An incorrect product description not only misinforms the consumer about the nature of their loan but cascades into compounding errors across the Loan Terms table, the Projected Payments table, and potentially the rate lock disclosure. Accurate product disclosure is essential for the consumer to understand the stability or variability of their payment obligations.",
+    "how_reviewed": "Examiners verify the product description against the interest rate disclosed in the Loan Terms table and the note rate in the final executed loan documents. For fixed-rate loans, examiners confirm that all three 'Can this amount increase after closing?' indicators are marked 'NO.' For adjustable-rate or step-rate loans, examiners verify that the product description includes the adjustment period and that the increase indicators are correctly set to 'YES.' Revised LEs are also reviewed to confirm the product field was not inadvertently altered during the revision process.",
+    "common_errors": [
+      {
+        "title": "Product Field Does Not Match Loan Type",
+        "description": "The product field discloses a fixed rate for a loan that is actually adjustable, or vice versa, creating a fundamental mismatch between what the consumer is told about their rate structure and the actual terms of the legal obligation.",
+        "cite": "§1026.37(a)(10)"
+      },
+      {
+        "title": "Product and Increase Indicators Inconsistent",
+        "description": "The product field and the 'Can this amount increase after closing?' indicators in the Loan Terms table are contradictory — for example, 'Fixed Rate' is disclosed but one or more increase indicators is marked 'YES.'",
+        "cite": "§1026.37(b)"
+      },
+      {
+        "title": "No Revised LE After Product Type Change",
+        "description": "The consumer switched from one product type to another — such as from an adjustable-rate to a fixed-rate loan — but no revised Loan Estimate was issued to reflect the product change and any resulting fee or payment differences.",
+        "cite": "§1026.19(e)(3)(iv)(C)"
+      },
+      {
+        "title": "Missing Supplemental Product Description",
+        "description": "A loan with an interest-only or step-rate feature does not include the required supplemental description in the product field (e.g., 'Fixed Rate, Interest Only'), leaving the consumer without complete information about the payment structure."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Verify Product Field Against Note Rate and Type",
+        "description": "Verify the product field is consistent with the note rate type — if the note is fixed, the product field must say 'Fixed Rate' and all three increase indicators in the Loan Terms table must be 'NO,' with no exceptions."
+      },
+      {
+        "title": "Assess LOS Auto-Population Risk for Product Field",
+        "description": "For institutions offering both fixed and adjustable products, determine whether the LOS auto-populates the product field or requires manual entry — manual entry fields are a higher-risk source of errors across a file population and warrant additional quality control steps."
+      },
+      {
+        "title": "Check Product Field on Each Revised LE",
+        "description": "When reviewing a revised LE issued after a rate lock or changed circumstance, confirm the product description was not inadvertently altered by the system during the revision process, as LOS updates sometimes reset field values to defaults."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(10)",
+      "label": "Loan Product — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-10"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iv)(C)",
+      "label": "Changed Circumstance — Consumer-Requested Changes",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-C"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "product change requested by consumer",
+      "program eligibility change"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(C)"
+  },
+  "related_fields": [
+    "1026-37-a-10-rate-lock",
+    "1026-37-b-2-interest-rate",
+    "1026-37-b-1-loan-amount"
+  ],
+  "tags": [
+    "general-information",
+    "loan-product",
+    "rate",
+    "fixed-rate",
+    "changed-circumstance"
+  ],
+  "last_updated": "2026-02-27"
+}

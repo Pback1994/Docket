@@ -1,0 +1,130 @@
+{
+  "id": "1026-37-e-loan-costs",
+  "panel_header": "Loan Costs",
+  "regulation": "12 CFR §1026.37(e)",
+  "summary": "Itemized charges associated with obtaining the loan, organized into Section A (Origination Charges), Section B (Services Borrower Did Not Shop For), and Section C (Services Borrower Did Shop For). Tolerance classification determines which charges are subject to strict limits between the LE and CD.",
+  "navigation": {
+    "section_group": "Loan Costs",
+    "field_number": 1,
+    "field_total": 1,
+    "page": 2,
+    "prev_field_id": null,
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Loan Costs</strong> section itemizes all charges associated with obtaining the loan, organized into three categories. Tolerance classification — zero, 10% aggregate, or unlimited — determines which charges are subject to strict limits from the LE to the Closing Disclosure.",
+    "cards": [
+      {
+        "title": "Section A — Origination Charges",
+        "content": "§1026.37(e)(1) requires itemized disclosure of each charge assessed by the creditor for making the loan, including origination fees, points, application fees, underwriting fees, and any other charge imposed by the creditor as a condition of the loan. Points must be disclosed showing both the percentage of the loan amount and the corresponding dollar amount. All Section A charges are subject to <strong>zero tolerance</strong> — they cannot increase from the LE to the CD under any circumstances except through a valid changed circumstance under §1026.19(e)(3)(iv)."
+      },
+      {
+        "title": "Section B — Services Borrower Did Not Shop For",
+        "content": "§1026.37(e)(2) requires disclosure of third-party settlement service charges required by the creditor where the borrower does not have the ability to select the provider. Common Section B items include appraisal fees, credit report fees, flood determination fees, tax monitoring services, and title-related services where the creditor designates the provider. Section B charges are subject to <strong>zero tolerance</strong> and cannot increase from the LE to the CD."
+      },
+      {
+        "title": "Section C — Services Borrower Did Shop For",
+        "content": "§1026.37(e)(3) requires disclosure of third-party settlement service charges where the borrower may select the provider. If the consumer selects a provider from the creditor's written list of service providers, Section C charges are subject to a <strong>10% aggregate tolerance</strong> — the total of all such charges cannot increase more than 10% in aggregate from the LE to the CD. If the consumer selects a provider not on the written list, those specific charges are subject to unlimited tolerance."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(e).",
+    "cards": [
+      {
+        "title": "Official Interpretation — Origination Charges",
+        "content": "An origination charge under §1026.37(e)(1) is any amount the consumer will pay the creditor for originating the transaction. This includes charges for the loan application, underwriting, processing, and any charge collected for the funding of the transaction. Transfer taxes paid to the creditor may not be included in Section A — they belong in Section E (Taxes and Government Fees). A flat origination fee must be disclosed as a single line item; points must appear on a separate line showing both the percentage and dollar amount. If the creditor requires a service but waives the fee, the line item must still be disclosed at $0."
+      },
+      {
+        "title": "Official Interpretation — Written List and Provider Selection",
+        "content": "For Section C services, the creditor must provide a written list of settlement service providers at the time the LE is delivered. The written list must identify the specific settlement services for which the consumer may shop, and contain at least one provider for each listed service with that provider's name, address, and phone number. If the consumer chooses a provider from the written list, the 10% aggregate tolerance applies. If the consumer selects a provider not on the written list — or if no written list was provided — the charge is not subject to any tolerance limit and may change without restriction."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Loan Costs section is the heart of the TRID tolerance framework — the correct classification of each charge into Section A, B, or C determines whether that charge is subject to zero tolerance, 10% aggregate tolerance, or unlimited tolerance from the Loan Estimate to the Closing Disclosure. Misclassification of a single fee can shift an entire category from a protected tolerance bucket to an unprotected one, or vice versa, with significant consequences for the creditor's cure obligations. Accurate and complete itemization is also essential for computing the APR and the 'In 5 Years' figure on page 3.",
+    "how_reviewed": "Examiners build an LE-to-CD fee comparison spreadsheet mapping each line item by section and tolerance category, then calculate the aggregate variance for Section A (zero tolerance), Section B (zero tolerance), and Section C (10% aggregate). For Section A charges, any increase from LE to CD requires a documented valid changed circumstance. For Section C, the 10% aggregate test is applied to all charges where the consumer used the creditor's written provider list. Examiners also review whether a written provider list was delivered and whether the list identifies at least one provider per service.",
+    "common_errors": [
+      {
+        "title": "Origination Charges Bundled Without Itemization",
+        "description": "Multiple origination charges are combined into a single 'origination fee' line item without separate identification by name and amount, preventing examiners and consumers from determining whether each charge is legitimate and correctly categorized.",
+        "cite": "§1026.37(e)(1)"
+      },
+      {
+        "title": "Section B Services Misclassified as Section C",
+        "description": "Third-party services where the creditor designates the provider are placed in Section C (shoppable) rather than Section B (non-shoppable), improperly reducing zero-tolerance exposure by treating non-shoppable charges as subject only to 10% aggregate tolerance.",
+        "cite": "§1026.19(e)(3)(i)"
+      },
+      {
+        "title": "Transfer Taxes or Recording Fees in Section A",
+        "description": "Transfer taxes or recording fees are incorrectly placed in Section A origination charges rather than in Section E (Taxes and Government Fees), misstating the nature of the charges and misapplying the applicable tolerance category.",
+        "cite": "§1026.37(e)(1)"
+      },
+      {
+        "title": "Required Zero-Dollar Line Items Omitted",
+        "description": "A service required by the creditor that carries no fee — for example, a waived underwriting fee — is omitted from the disclosure entirely rather than being listed at $0, as required by §1026.37(e).",
+        "cite": "§1026.37(e)"
+      },
+      {
+        "title": "Section C Aggregate Tolerance Exceeded on CD",
+        "description": "The total of Section C charges on the Closing Disclosure exceeds the total of corresponding Section C charges on the Loan Estimate by more than 10%, where the consumer selected providers from the creditor's written list, requiring a tolerance cure.",
+        "cite": "§1026.19(e)(3)(ii)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Map Each Charge to Its Correct Tolerance Category",
+        "description": "Build a standardized itemization checklist that maps each required service to its correct section (A, B, or C) and tolerance category — inconsistent classification across loan files is one of the most common systemic findings in TRID examinations."
+      },
+      {
+        "title": "Apply 10% Tolerance Test on Aggregate for Section C",
+        "description": "When performing the LE-to-CD tolerance analysis for Section C, calculate the 10% tolerance on the aggregate of all Section C charges where the borrower used the creditor's written provider list — the test is aggregate, not line-by-line."
+      },
+      {
+        "title": "Document Changed Circumstances for Any Section A Increase",
+        "description": "For any Section A charge that increased from the LE to the CD — even by $1 — document the specific triggering event, the new information received, and the date the creditor received it in the loan file, as this is the only permissible basis for a zero-tolerance cure exception."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(e)",
+      "label": "Loan Costs — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#e"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(i)",
+      "label": "Zero Tolerance — Origination Charges and Section B Services",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-i"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(ii)",
+      "label": "10% Aggregate Tolerance — Section C Services",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-ii"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "valid changed circumstance under §1026.19(e)(3)(iv)",
+      "consumer selects provider not on written list for Section C service"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)"
+  },
+  "related_fields": [
+    "1026-37-d-1-estimated-closing-costs",
+    "1026-37-f-other-costs"
+  ],
+  "tags": [
+    "loan-costs",
+    "tolerances",
+    "zero-tolerance",
+    "10-percent-tolerance",
+    "origination-charges",
+    "section-a",
+    "section-b",
+    "section-c"
+  ],
+  "last_updated": "2026-03-04"
+}

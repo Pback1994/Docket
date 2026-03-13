@@ -1,0 +1,110 @@
+{
+  "id": "1026-37-a-8-loan-type",
+  "panel_header": "Loan Type",
+  "regulation": "12 CFR §1026.37(a)(11)",
+  "summary": "The insurance or guarantee program applicable to the transaction: Conventional, FHA, VA, or USDA. The loan type governs applicable MI disclosures, funding fee requirements, and certain fee tolerance rules.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 8,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-7-product",
+    "next_field_id": "1026-37-a-9-loan-id"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Loan Type</strong> identifies the insurance or guarantee program: Conventional, FHA, VA, or USDA/Rural Housing Service. This classification determines applicable MI disclosures, funding fee requirements, and certain fee tolerance rules.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(11) requires disclosure of the loan type using one of the following: Conventional, FHA, VA, USDA/Rural Housing Service, or Other (with description). For FHA loans, the upfront MIP and monthly MIP must be reflected in projected payments and closing costs. For VA loans, the funding fee must be disclosed."
+      },
+      {
+        "title": "Loan Type and Fee Structure",
+        "content": "The loan type directly affects the composition of closing cost disclosures. FHA carries an upfront MIP (disclosed in origination charges or as a financed amount) and a monthly MIP (in projected payments). VA requires a funding fee disclosure. Examiners verify that the fee structure is consistent with the stated loan type throughout the form."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(11).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The loan type must reflect the actual insurance or guarantee program applicable to the transaction. If a loan does not qualify as FHA, VA, or USDA, it must be disclosed as 'Conventional' or, if it is a different program type not covered by these designations, as 'Other' with a brief description. A change in loan type — for example, when a borrower applying for a conventional loan subsequently qualifies only for an FHA loan — constitutes a changed circumstance under §1026.19(e)(3)(iv)(A) that may permit issuance of a revised Loan Estimate reflecting updated charges."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The loan type classification determines which program-specific disclosures must appear on the Loan Estimate — including FHA upfront MIP, VA funding fees, and USDA guarantee fees — and governs whether those charges are correctly reflected in the Projected Payments table and closing cost sections. An incorrect loan type can cause an entire chain of downstream disclosure errors affecting fees, MI disclosures, and projected payments. Accurate classification also ensures that program-specific consumer protections, such as FHA assumability rights, are correctly disclosed elsewhere on the form.",
+    "how_reviewed": "Examiners verify the loan type against the AUS findings (DU or LP), the agency commitment or case number, and the lender's underwriting file. For FHA loans, examiners confirm that the upfront MIP is disclosed in the appropriate section and that the monthly MIP appears in the Projected Payments table. For VA loans, examiners verify the funding fee disclosure and the correct percentage applied. Examiners also check for a changed circumstance if the loan type changed during origination without a corresponding revised LE.",
+    "common_errors": [
+      {
+        "title": "Incorrect Loan Type Classification",
+        "description": "The loan type is incorrectly classified — for example, an FHA loan disclosed as Conventional or vice versa — causing program-specific fee disclosures and MI requirements to be missing or applied to the wrong transaction.",
+        "cite": "§1026.37(a)(11)"
+      },
+      {
+        "title": "FHA MIP or VA Funding Fee Not Disclosed",
+        "description": "The FHA upfront mortgage insurance premium or the VA funding fee is missing from the closing cost sections of the Loan Estimate, despite the loan type requiring these charges to be disclosed.",
+        "cite": "§1026.37(a)(11)"
+      },
+      {
+        "title": "Projected Payments Table Missing MI for FHA Loan",
+        "description": "An FHA loan does not include monthly MIP in the Projected Payments table, or the column structure does not reflect FHA MIP cancellation rules, creating an inaccurate picture of the total monthly payment obligation."
+      },
+      {
+        "title": "No Revised LE After Loan Type Change",
+        "description": "The loan type changed during origination — for example, a borrower who applied for a conventional loan qualified only for FHA — but no revised Loan Estimate was issued to reflect the program change and updated fee structure.",
+        "cite": "§1026.19(e)(3)(iv)(A)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Verify FHA MIP Disclosure in Both Sections",
+        "description": "For FHA loans, verify that the upfront MIP is disclosed — either in origination charges or as a financed amount — and that the monthly MIP appears in the Projected Payments table; missing either element is a compliance finding that affects both tolerance analysis and payment accuracy."
+      },
+      {
+        "title": "Confirm VA Funding Fee Percentage and Placement",
+        "description": "For VA loans, confirm the funding fee is disclosed in the appropriate section and that the correct funding fee percentage was applied based on the veteran's service category, down payment amount, and prior use of VA entitlement."
+      },
+      {
+        "title": "Cross-Reference Loan Type Against AUS Findings",
+        "description": "Cross-reference the loan type on the Loan Estimate against the AUS findings and the lender's commitment letter to confirm the program was not changed without a corresponding revised LE and documented changed circumstance."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(11)",
+      "label": "Loan Type — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-11"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iv)(A)",
+      "label": "Changed Circumstance — Eligibility / Program Change",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-A"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "loan type change",
+      "program eligibility change"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(A)"
+  },
+  "related_fields": [
+    "1026-37-a-7-product",
+    "1026-37-c-projected-payments",
+    "1026-37-b-1-loan-amount"
+  ],
+  "tags": [
+    "general-information",
+    "loan-type",
+    "fha",
+    "va",
+    "conventional",
+    "mortgage-insurance"
+  ],
+  "last_updated": "2026-02-27"
+}

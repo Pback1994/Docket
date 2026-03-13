@@ -1,0 +1,128 @@
+{
+  "id": "1026-37-c-projected-payments",
+  "panel_header": "Projected Payments",
+  "regulation": "12 CFR §1026.37(c)",
+  "summary": "A table disclosing estimated total monthly payments across one or more periods, broken down into P&I, mortgage insurance, and estimated escrow. For a fixed-rate loan without MI, a single column covering the full term is typical.",
+  "navigation": {
+    "section_group": "Projected Payments",
+    "field_number": 1,
+    "field_total": 1,
+    "page": 1,
+    "prev_field_id": null,
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Projected Payments</strong> table discloses the estimated total monthly payment across one or more payment periods, broken into P&I, mortgage insurance, and estimated escrow. For a fixed-rate loan without MI, a single column is typical.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(c) requires the creditor to disclose projected payments in a table with at least one column per payment period. Each column must show the payment range, P&I, mortgage insurance (if applicable), estimated escrow, total estimated monthly payment, and the estimated taxes/insurance/assessments amount."
+      },
+      {
+        "title": "Column Structure",
+        "content": "For a fixed-rate loan without mortgage insurance, a single column covering the full loan term is sufficient. If PMI is required and cancels at 80% LTV, two columns are required: one for the period with MI and one for the period after MI cancels. The P&I amount will be identical in both columns for a fixed-rate loan."
+      },
+      {
+        "title": "Escrow Tolerance",
+        "content": "Estimated escrow amounts — including property taxes, hazard insurance, and other escrowed charges — are subject to unlimited tolerance under §1026.19(e)(3)(iii). They may increase without limit from the LE to the CD. However, significantly understated escrow estimates may raise good-faith estimation concerns."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(c).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "Each column of the Projected Payments table must correspond to a distinct payment range. For transactions with a fixed rate and no mortgage insurance, a single column is sufficient. For transactions where the payment amount changes during the loan term — due to MI cancellation, rate adjustments, or payment schedule changes — a separate column is required for each distinct payment period. The estimated escrow amount must reflect a reasonable estimate of taxes, hazard insurance, and any other amounts that will be escrowed."
+      },
+      {
+        "title": "Taxes, Insurance & Assessments Line",
+        "content": "The 'Estimated Taxes, Insurance & Assessments' line shown below the column totals must reflect all monthly escrow amounts — whether or not the creditor will collect them in escrow. If the consumer will pay taxes or insurance directly rather than through escrow, these amounts must still be reflected in this line item with a notation that they are not included in the monthly payment."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Projected Payments table gives consumers a complete picture of their total estimated monthly payment obligations across the full life of the loan, broken down into P&I, mortgage insurance, and escrow. It is the primary vehicle through which consumers understand how their payment will change — or not change — over time, and it must be internally consistent with the Loan Terms table figures and externally consistent with any MI cancellation schedule and escrow estimates. Errors in this table can significantly distort the consumer's understanding of their future payment obligations.",
+    "how_reviewed": "Examiners cross-check the P&I amount in the first Projected Payments column against the P&I disclosed in the Loan Terms table, which must be identical. For loans with mortgage insurance, examiners verify that the correct MI amount is included and that the column structure accurately reflects when MI cancels. Examiners also confirm that the 'Estimated Taxes, Insurance & Assessments' line is present and reflects a reasonable estimate of all monthly escrow obligations, whether or not collected in escrow.",
+    "common_errors": [
+      {
+        "title": "Missing Second Column When MI Cancels Mid-Term",
+        "description": "A single payment column is used for a loan that requires mortgage insurance scheduled to cancel before maturity — a second column is required to show the payment period after MI cancels, and its omission creates an incomplete payment disclosure.",
+        "cite": "§1026.37(c)"
+      },
+      {
+        "title": "Mortgage Insurance Omitted From Payment Table",
+        "description": "Mortgage insurance — FHA MIP or conventional PMI — is not reflected in the Projected Payments table for a loan that requires it, causing the disclosed total monthly payment to understate the consumer's actual payment obligation.",
+        "cite": "§1026.37(c)"
+      },
+      {
+        "title": "P&I Amount Inconsistent Between Tables",
+        "description": "The P&I amount in the Projected Payments table does not match the P&I amount disclosed in the Loan Terms table under §1026.37(b)(3), creating an internal inconsistency within the same Loan Estimate form."
+      },
+      {
+        "title": "Taxes and Assessments Line Omitted",
+        "description": "The 'Estimated Taxes, Insurance & Assessments' line at the bottom of the Projected Payments table is missing, depriving the consumer of a complete picture of all monthly housing expense obligations."
+      },
+      {
+        "title": "Table Not Updated After Rate or Amount Change",
+        "description": "A revised Loan Estimate was issued after a rate or loan amount change, but the Projected Payments table was not updated to reflect the revised P&I payment and any resulting changes to MI or escrow figures."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Determine Correct Column Structure for MI Loans",
+        "description": "For each loan with PMI, calculate when MI would cancel at 80% LTV under the Homeowners Protection Act schedule and verify whether a second column was required and disclosed — a single-column disclosure for a PMI loan is an automatic structural finding."
+      },
+      {
+        "title": "Cross-Check P&I Against Loan Terms Table",
+        "description": "Cross-check the P&I in the first Projected Payments column against the P&I in the Loan Terms table — they must be identical for the first payment period of a fixed-rate loan, and any discrepancy reveals an input error in one of the three underlying variables."
+      },
+      {
+        "title": "Verify FHA MIP Column Structure Against Current Rules",
+        "description": "For FHA loans, confirm that monthly MIP is included in the MI row and that the column structure reflects current FHA MIP cancellation rules — FHA MIP rules vary by base LTV and loan term and are a common source of incorrect column structure in LOS-generated disclosures."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(c)",
+      "label": "Projected Payments — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#c"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iii)",
+      "label": "Unlimited Tolerance — Estimated Charges",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iii"
+    }
+  ],
+  "tolerance": {
+    "category": "unlimited",
+    "description": "Estimated escrow amounts disclosed in the Projected Payments table are subject to unlimited tolerance and may increase without limit between the LE and CD. The P&I component is not a fee and is not subject to the tolerance framework.",
+    "cure_threshold": null,
+    "regulatory_cite": "§1026.19(e)(3)(iii)"
+  },
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "loan amount change",
+      "interest rate change",
+      "mortgage insurance requirement change",
+      "escrow requirement change"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)"
+  },
+  "related_fields": [
+    "1026-37-b-3-principal-interest",
+    "1026-37-b-2-interest-rate",
+    "1026-37-d-1-estimated-closing-costs"
+  ],
+  "tags": [
+    "projected-payments",
+    "payment",
+    "escrow",
+    "mortgage-insurance",
+    "tolerances",
+    "unlimited-tolerance"
+  ],
+  "last_updated": "2026-02-27"
+}

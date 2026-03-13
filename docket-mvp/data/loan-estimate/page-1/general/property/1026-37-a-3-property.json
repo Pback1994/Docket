@@ -1,0 +1,105 @@
+{
+  "id": "1026-37-a-3-property",
+  "panel_header": "Property",
+  "regulation": "12 CFR §1026.37(a)(6)",
+  "summary": "The address and zip code of the property securing the loan. If no address is available at application, a property description may be used until an address is determined, at which point a revised LE may be required.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 3,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-2-applicants",
+    "next_field_id": "1026-37-a-4-sale-price"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Property</strong> field discloses the address and zip code of the property that will secure the transaction. If no address is available at the time of application, a property description may be substituted until an address is determined.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(6) requires the address and zip code of the property that will secure the transaction. If no property address exists at the time of application, a property description — such as a legal description, lot number, or similar identifier — must be used in its place."
+      },
+      {
+        "title": "Address Determination",
+        "content": "Once a property address is identified for a transaction that initially used a property description, a revised Loan Estimate must be issued within three business days reflecting the updated property information, provided this constitutes a valid changed circumstance under §1026.19(e)(3)(iv)(A)."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(6).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "If no address is available at the time the Loan Estimate is issued, a property description that sufficiently identifies the property must be used. A 'property description' is any description sufficient to identify the property, such as a legal description, lot number, or metes-and-bounds description. The zip code must be included when a physical address is used. A creditor need not issue a revised Loan Estimate solely because a more precise description or address becomes available — a valid changed circumstance under §1026.19(e)(3)(iv)(A) must also be present."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The property address identifies the collateral securing the transaction and is foundational to the validity of the Loan Estimate as a disclosure tied to a specific loan. An incorrect or incomplete address can indicate that the LE was issued before the collateral was determined, that the property changed after issuance without a required revised disclosure, or that the disclosure does not accurately describe the legal obligation. Consumer protection requires that borrowers receive accurate information about the specific property they are borrowing against.",
+    "how_reviewed": "Examiners cross-reference the property address on the Loan Estimate against the executed purchase contract, appraisal report, and title commitment to confirm accuracy and consistency. For new construction loans, examiners pay particular attention to whether the lot or unit assignment changed after the initial LE was issued. The presence or absence of the zip code is verified as a technical requirement, and any substitution of a property description in place of a physical address is evaluated for appropriateness.",
+    "common_errors": [
+      {
+        "title": "Zip Code Missing From Property Address",
+        "description": "The zip code is omitted from the property address disclosure, which is a technical violation even when the street address is otherwise correct and the property is clearly identifiable.",
+        "cite": "§1026.37(a)(6)"
+      },
+      {
+        "title": "Address Inconsistent With Purchase Contract",
+        "description": "The property address on the Loan Estimate does not match the address in the executed purchase contract or appraisal, suggesting the disclosure was prepared before the collateral was finalized or that the property changed after issuance."
+      },
+      {
+        "title": "No Revised LE After Property Change",
+        "description": "The property securing the transaction changed after the initial Loan Estimate was issued — such as a different lot or unit in new construction — but no revised Loan Estimate was issued to reflect the updated collateral.",
+        "cite": "§1026.19(e)(3)(iv)(A)"
+      },
+      {
+        "title": "Property Description Used After Address Available",
+        "description": "A property description was used in place of a physical address even though a confirmed street address was already available and identifiable at the time the Loan Estimate was issued, making the use of a description impermissible."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Cross-Reference Address Against Purchase Contract",
+        "description": "Cross-reference the property address on the Loan Estimate against the executed purchase contract and appraisal report — a mismatch can indicate a late change to the collateral that should have triggered a revised Loan Estimate under the changed circumstance rules."
+      },
+      {
+        "title": "Monitor New Construction Lot Assignments",
+        "description": "For new construction loans, pay close attention to whether the collateral changed after the initial Loan Estimate was issued — a different lot or unit assignment is a frequent source of unreported changed circumstances that require a revised disclosure."
+      },
+      {
+        "title": "Verify Zip Code Is Present on Every Disclosure",
+        "description": "Confirm that the zip code is included on every Loan Estimate, including revised versions — its omission is a technical violation even when the street address is otherwise correct, and it is easily missed in bulk disclosure reviews."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(6)",
+      "label": "Property — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-6"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iv)(A)",
+      "label": "Changed Circumstance — Property Value / Security",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-A"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "property address change",
+      "property substitution"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(A)"
+  },
+  "related_fields": [
+    "1026-37-a-4-sale-price",
+    "1026-37-a-8-loan-type"
+  ],
+  "tags": [
+    "general-information",
+    "property",
+    "changed-circumstance"
+  ],
+  "last_updated": "2026-02-27"
+}

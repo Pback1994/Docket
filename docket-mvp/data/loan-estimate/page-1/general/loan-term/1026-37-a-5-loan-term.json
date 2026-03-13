@@ -1,0 +1,107 @@
+{
+  "id": "1026-37-a-5-loan-term",
+  "panel_header": "Loan Term",
+  "regulation": "12 CFR §1026.37(a)(8)",
+  "summary": "The length of the loan expressed in years. The term determines the amortization period and must be internally consistent with the P&I payment and the Projected Payments table throughout the disclosure.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 5,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-4-sale-price",
+    "next_field_id": "1026-37-a-6-purpose"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Loan Term</strong> is the length of the loan expressed in years. For a fixed-rate mortgage, this determines the amortization period and directly drives the monthly principal and interest payment.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(8) requires disclosure of the loan term in years. For fixed-rate mortgages, common terms are 10, 15, 20, and 30 years. The disclosed term must match the term used to calculate the P&I payment under §1026.37(b)(3)."
+      },
+      {
+        "title": "Consistency Requirement",
+        "content": "The loan term must be internally consistent across the entire Loan Estimate. The term shown here must mathematically correspond to the P&I payment in the Loan Terms table and to the payment period ranges shown in the Projected Payments table."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(8).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The loan term is expressed in years. If the loan term is not a whole number of years, the creditor may express it in years and months (e.g., '30 years and 2 months'). For transactions where a loan term is not defined or not applicable — such as certain open-end credit plans — the creditor need not disclose a loan term. A consumer-requested change to the loan term constitutes a valid changed circumstance under §1026.19(e)(3)(iv)(C), permitting the creditor to issue a revised Loan Estimate with updated charges reflecting the new term."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The loan term is the foundation of the amortization calculation that drives the disclosed monthly P&I payment, the structure of the Projected Payments table, and the Total Interest Percentage on page 3. A loan term that does not match the actual obligation leads to downstream errors across multiple sections of the form, and a consumer-requested term change without a revised LE can constitute an unreported changed circumstance. Accurate disclosure of the loan term protects the consumer's ability to evaluate the true cost of credit.",
+    "how_reviewed": "Examiners verify the loan term by cross-referencing it against the P&I payment in the Loan Terms table using the standard amortization formula, and against the payment column ranges in the Projected Payments table. The disclosed term is also compared to the executed promissory note to confirm it matches the final legal obligation. When a revised LE was issued, examiners verify that the triggering event for any term change is documented in the file with a date supporting the timing of the revision.",
+    "common_errors": [
+      {
+        "title": "Loan Term Inconsistent With P&I Calculation",
+        "description": "The loan term on the Loan Estimate does not reconcile with the disclosed P&I payment when recalculated using the standard amortization formula, most commonly caused by a last-minute term change that was not fully propagated across the form.",
+        "cite": "§1026.37(a)(8)"
+      },
+      {
+        "title": "No Revised LE After Consumer Term Change",
+        "description": "The consumer requested a change in loan term — such as switching from 30 years to 15 years — but no revised Loan Estimate was issued reflecting the updated payment and any associated fee changes.",
+        "cite": "§1026.19(e)(3)(iv)(C)"
+      },
+      {
+        "title": "Loan Term Differs From Executed Note",
+        "description": "The loan term disclosed on the Loan Estimate does not match the term stated in the final executed promissory note, indicating a discrepancy between the estimated and actual legal obligation."
+      },
+      {
+        "title": "Projected Payments Columns Misaligned With Term",
+        "description": "The Projected Payments table shows payment column ranges that do not align with the disclosed loan term — for example, a 15-year term with columns running to year 30 — creating internal inconsistency across the disclosure form."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Recalculate P&I to Verify Term Consistency",
+        "description": "Recalculate the P&I payment using the disclosed loan amount, rate, and term as a standard step in any TRID review — a payment that does not reconcile quickly identifies an error in one of the three underlying variables, including the term."
+      },
+      {
+        "title": "Document the Triggering Event for Term Changes",
+        "description": "When reviewing a revised LE issued after a term change, confirm the triggering event is documented in the file with a date that supports the timing of the revised disclosure — an undocumented term change cannot support a valid changed circumstance reset."
+      },
+      {
+        "title": "Check Projected Payments Column Ranges",
+        "description": "Verify that the payment column ranges in the Projected Payments table are consistent with the disclosed loan term — a 15-year term should not show payment columns running to year 30, and any misalignment is an internal consistency finding."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(8)",
+      "label": "Loan Term — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-8"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iv)(C)",
+      "label": "Changed Circumstance — Consumer-Requested Changes",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-C"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "consumer-requested term change",
+      "program eligibility change"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(C)"
+  },
+  "related_fields": [
+    "1026-37-b-1-loan-amount",
+    "1026-37-b-3-principal-interest",
+    "1026-37-a-7-product"
+  ],
+  "tags": [
+    "general-information",
+    "loan-terms",
+    "amortization",
+    "changed-circumstance"
+  ],
+  "last_updated": "2026-02-27"
+}

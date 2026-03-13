@@ -1,0 +1,103 @@
+{
+  "id": "1026-37-b-3-principal-interest",
+  "panel_header": "Monthly Principal & Interest",
+  "regulation": "12 CFR §1026.37(b)(3)",
+  "summary": "The scheduled monthly P&I payment based on the disclosed loan amount, rate, and term. For a fixed-rate loan this payment is constant for the life of the loan and does not include taxes, insurance, or mortgage insurance.",
+  "navigation": {
+    "section_group": "Loan Terms",
+    "field_number": 3,
+    "field_total": 5,
+    "page": 1,
+    "prev_field_id": "1026-37-b-2-interest-rate",
+    "next_field_id": "1026-37-b-4-prepayment-penalty"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Monthly Principal & Interest</strong> is the scheduled P&I payment calculated from the disclosed loan amount, rate, and term. For a fixed-rate loan, this payment is constant and does not include taxes, insurance, or mortgage insurance.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(b)(3) requires disclosure of the scheduled monthly P&I payment and an indicator of whether it can increase after consummation. For a fixed-rate mortgage, the indicator must be 'NO.' This amount is calculated using the standard amortization formula applied to the disclosed loan amount at the disclosed rate over the disclosed term."
+      },
+      {
+        "title": "Consistency Requirement",
+        "content": "The P&I amount here must be mathematically consistent with the loan amount under §1026.37(b)(1), the interest rate under §1026.37(b)(2), and the payment amounts shown in the Projected Payments table under §1026.37(c). Examiners routinely recalculate this figure as a standard review step."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(b)(3).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The principal and interest payment is the scheduled periodic payment of principal and interest, calculated based on the loan amount, interest rate, and loan term. This amount does not include estimated taxes, insurance, or assessments. For a fixed-rate loan, the payment cannot increase and the indicator must be 'NO.' For a loan where the P&I payment can increase — such as an ARM or step-rate loan — the maximum P&I payment that can apply must also be disclosed. The P&I payment must be consistent with the first payment amount shown in the Projected Payments table."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The monthly P&I payment is one of the most visible and consumer-significant figures on the Loan Estimate, and it must be mathematically derivable from the disclosed loan amount, interest rate, and loan term. Because it sits at the intersection of three other disclosed variables, an incorrect P&I payment is a reliable indicator that at least one of those inputs is wrong — making it one of the most useful cross-check points in a TRID examination. Consumers rely on this figure to budget their monthly obligations and compare loan options.",
+    "how_reviewed": "Examiners routinely recalculate the P&I payment using the standard amortization formula applied to the disclosed loan amount, rate, and term, then compare the result to the disclosed figure. They also cross-check the P&I in the Loan Terms table against the first payment column of the Projected Payments table, which must be identical for fixed-rate loans. Rounding discrepancies of $1 are noted but evaluated in the context of LOS methodology consistency.",
+    "common_errors": [
+      {
+        "title": "P&I Does Not Reconcile With Disclosed Inputs",
+        "description": "The disclosed P&I payment does not reconcile with the loan amount, interest rate, and term when recalculated using the standard amortization formula, indicating an error in one or more of the three underlying input variables.",
+        "cite": "§1026.37(b)(3)"
+      },
+      {
+        "title": "P&I Inconsistent With Projected Payments Table",
+        "description": "The P&I amount in the Loan Terms table does not match the P&I amount in the first column of the Projected Payments table, creating an internal inconsistency within the same disclosure form.",
+        "cite": "§1026.37(b)(3)"
+      },
+      {
+        "title": "Total Monthly Payment Disclosed Instead of P&I Only",
+        "description": "The total monthly payment — including estimated escrow and mortgage insurance — is disclosed in the P&I field rather than the principal and interest component alone, overstating the contractual payment amount."
+      },
+      {
+        "title": "P&I Not Updated on Revised LE After Rate or Amount Change",
+        "description": "A revised Loan Estimate was issued after a rate or loan amount change, but the P&I payment was not recalculated and updated to reflect the revised inputs, leaving an internally inconsistent disclosure."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Recalculate P&I as a Standard Examination Step",
+        "description": "Always recalculate the P&I payment using the disclosed loan amount, rate, and term as a standard step in any TRID review — this quickly identifies errors in any of the three underlying variables and is one of the most efficient consistency checks available."
+      },
+      {
+        "title": "Cross-Check P&I Against Projected Payments Table",
+        "description": "Verify the P&I amount in the Loan Terms table matches the P&I amount in the first column of the Projected Payments table — these must be identical for the first payment period of a fixed-rate loan, and any discrepancy is an internal consistency finding."
+      },
+      {
+        "title": "Evaluate Rounding Discrepancies in Context",
+        "description": "A P&I that is off by $1 may reflect an LOS rounding methodology difference rather than a substantive error — document the finding, note the likely cause, and determine whether it reflects a systemic LOS configuration issue affecting a broader population of loans."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(b)(3)",
+      "label": "Monthly Principal & Interest — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#b-3"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "loan amount change",
+      "interest rate change after lock"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(D)"
+  },
+  "related_fields": [
+    "1026-37-b-1-loan-amount",
+    "1026-37-b-2-interest-rate",
+    "1026-37-c-projected-payments"
+  ],
+  "tags": [
+    "loan-terms",
+    "payment",
+    "principal",
+    "interest",
+    "calculation"
+  ],
+  "last_updated": "2026-02-27"
+}

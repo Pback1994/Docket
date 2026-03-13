@@ -1,0 +1,135 @@
+{
+  "id": "1026-37-f-other-costs",
+  "panel_header": "Other Costs",
+  "regulation": "12 CFR §1026.37(f)",
+  "summary": "All settlement charges not included in Loan Costs, organized into Section E (Taxes and Government Fees), Section F (Prepaids), Section G (Initial Escrow Payment at Closing), and Section H (Other). Each sub-section carries a distinct tolerance classification.",
+  "navigation": {
+    "section_group": "Other Costs",
+    "field_number": 1,
+    "field_total": 1,
+    "page": 2,
+    "prev_field_id": null,
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Other Costs</strong> section discloses all settlement charges not included in Loan Costs, across four categories: Section E (Taxes and Government Fees), Section F (Prepaids), Section G (Initial Escrow Payment at Closing), and Section H (Other). Each section carries a different tolerance classification.",
+    "cards": [
+      {
+        "title": "Section E — Taxes and Government Fees",
+        "content": "§1026.37(f)(1) requires itemized disclosure of recording fees and transfer taxes. <strong>Recording fees</strong> — charges for recording the deed and security instrument — are subject to <strong>10% aggregate tolerance</strong>. All recording fees are measured together; the total cannot increase more than 10% from LE to CD. <strong>Transfer taxes</strong> imposed by state or local law on the transfer of real property are subject to <strong>zero tolerance</strong> and must be estimated with precision based on the property price and applicable tax rate."
+      },
+      {
+        "title": "Section F — Prepaids",
+        "content": "§1026.37(f)(2) requires disclosure of prepaid interest, homeowner's insurance premium, and mortgage insurance premium. All prepaids are subject to <strong>unlimited tolerance</strong> — they may increase without limit from the LE to the CD. Prepaid interest is calculated using the per diem interest rate, the estimated number of days from closing to end of the first month, and the loan amount. The homeowner's insurance premium reflects the first year's policy if paid at closing."
+      },
+      {
+        "title": "Section G — Initial Escrow Payment at Closing",
+        "content": "§1026.37(f)(3) requires disclosure of the initial escrow deposit collected at closing, itemized by type of charge (property taxes, homeowner's insurance, mortgage insurance, etc.). The monthly escrow amount for each item and the number of months collected must be shown. Initial escrow payments are subject to <strong>unlimited tolerance</strong>. Monthly amounts must be consistent with the RESPA escrow analysis and cannot exceed the initial deposit limits under RESPA."
+      },
+      {
+        "title": "Section H — Other",
+        "content": "§1026.37(f)(4) requires disclosure of any other settlement charges not categorized in Sections A–G or Section E–F. Examples include homeowner association dues, home warranty fees, real estate commission, and inspection charges required by the creditor. Section H items are subject to varying tolerance: items where the consumer selects from the creditor's written provider list are subject to 10% aggregate tolerance; all others are subject to unlimited tolerance."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(f).",
+    "cards": [
+      {
+        "title": "Official Interpretation — Recording Fees",
+        "content": "Recording fees under §1026.37(f)(1)(i) are fees associated with recording the deed and security instrument with the applicable government authority. For purposes of the 10% tolerance calculation, all recording fees are aggregated and measured together — the test is whether the total of all recording fees on the CD exceeds the total on the LE by more than 10%, not whether any individual recording fee increased. A recording fee that is clearly determinable at the time of the LE (e.g., a flat per-page fee that can be calculated from the estimated document length) should be disclosed with precision."
+      },
+      {
+        "title": "Official Interpretation — Transfer Taxes",
+        "content": "Transfer taxes under §1026.37(f)(1)(ii) are subject to zero tolerance, not the 10% tolerance applicable to recording fees. Transfer taxes are those imposed by state or local law on the transfer of real property or the recording of a mortgage. They must be estimated based on the property price and the applicable tax rate. Because transfer taxes are zero tolerance, an underestimate cannot be corrected on the CD without triggering a cure obligation — accurate estimation at the time of the LE is essential."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Other Costs section encompasses a wide range of charges — taxes, government fees, prepaids, and initial escrow deposits — each carrying a distinct tolerance classification that must be correctly applied. Transfer taxes are zero tolerance and must be estimated with precision; recording fees carry 10% aggregate tolerance; prepaids and escrow are unlimited. Misapplying a tolerance category or inaccurately estimating a charge in this section can generate cure obligations or create consumer harm through understated closing costs. The section also feeds directly into the RESPA escrow analysis, creating a cross-regulation consistency obligation.",
+    "how_reviewed": "Examiners verify the tolerance classification of each Other Costs line item, then perform LE-to-CD variance calculations by category. For transfer taxes, examiners confirm the disclosed amount is based on the actual sale price and the correct applicable tax rate. For recording fees, examiners compute the aggregate variance and check for the 10% threshold. For prepaids, examiners recalculate prepaid interest using the per diem rate, projected closing date, and loan amount. Section G initial escrow amounts are cross-referenced against the RESPA escrow analysis for consistency.",
+    "common_errors": [
+      {
+        "title": "Recording Fees Exceed 10% Aggregate Tolerance",
+        "description": "The total of all recording fees on the Closing Disclosure exceeds the total disclosed on the Loan Estimate by more than 10%, most commonly when the estimated page count or per-page recording fee was incorrect at origination.",
+        "cite": "§1026.19(e)(3)(ii)"
+      },
+      {
+        "title": "Transfer Taxes Understated Due to Wrong Value or Rate",
+        "description": "Transfer taxes are understated on the Loan Estimate because the estimated property value used in the calculation was below the actual sale price, or because the wrong applicable tax rate was applied for the county or municipality.",
+        "cite": "§1026.19(e)(3)(i)"
+      },
+      {
+        "title": "Prepaid Interest Calculated Using Wrong Inputs",
+        "description": "Prepaid interest is incorrectly calculated due to use of the wrong per diem rate, an incorrect number of days from projected closing to end of month, or a daily interest factor that does not reconcile with the disclosed loan amount and interest rate.",
+        "cite": "§1026.37(f)(2)"
+      },
+      {
+        "title": "Initial Escrow Deposit Uses Incorrect Monthly Amounts",
+        "description": "The initial escrow payment at closing is calculated using incorrect property tax or insurance amounts, or fails to include all required escrowed charges in the initial deposit figure, causing the disclosed amount to be understated.",
+        "cite": "§1026.37(f)(3)"
+      },
+      {
+        "title": "Homeowner's Insurance Omitted From Section F",
+        "description": "Homeowner's insurance is missing from the Section F prepaids disclosure for a purchase loan where coverage is required as a condition of the loan, understating the consumer's total prepaid obligations at closing."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Obtain Actual Recording Fee Schedule at Origination",
+        "description": "For recording fees, obtain the actual per-page fee schedule from the county recorder at loan origination and calculate based on the estimated document page count — a precise estimate eliminates the risk of a 10% aggregate tolerance overrun at closing."
+      },
+      {
+        "title": "Document Prepaid Interest Calculation Inputs",
+        "description": "For prepaid interest, document in the loan file the number of days from projected closing to end of month, the daily interest rate, and the loan amount — this allows quick recalculation if the projected closing date shifts and a revised LE is needed."
+      },
+      {
+        "title": "Cross-Reference Section G Against RESPA Escrow Analysis",
+        "description": "Cross-reference the Section G initial escrow monthly amounts against the RESPA escrow analysis disclosure — the per-month figures must be consistent across both disclosures, and a discrepancy between them is itself a compliance finding."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(f)",
+      "label": "Other Costs — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#f"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(ii)",
+      "label": "10% Aggregate Tolerance — Recording Fees",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-ii"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iii)",
+      "label": "Unlimited Tolerance — Prepaids and Escrow",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iii"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "change to recording fee estimate",
+      "property value change affecting transfer taxes",
+      "changed circumstance affecting any component fee"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)"
+  },
+  "related_fields": [
+    "1026-37-d-1-estimated-closing-costs",
+    "1026-37-e-loan-costs"
+  ],
+  "tags": [
+    "other-costs",
+    "tolerances",
+    "zero-tolerance",
+    "10-percent-tolerance",
+    "unlimited-tolerance",
+    "prepaids",
+    "escrow",
+    "recording-fees",
+    "transfer-taxes"
+  ],
+  "last_updated": "2026-03-04"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "1026-37-a-10-rate-lock",
+  "panel_header": "Rate Lock",
+  "regulation": "12 CFR §1026.37(a)(13)",
+  "summary": "Indicates whether the interest rate is locked at time of issuance. If locked, the expiration date, time, and time zone must be disclosed. Rate lock status determines which charges may be revised on a subsequent LE.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 10,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-9-loan-id",
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Rate Lock</strong> field indicates whether the interest rate is locked at the time of issuance. If locked, the expiration date, time, and time zone must be disclosed. Rate lock status determines which charges may be revised on a subsequent LE.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(13) requires disclosure of whether the interest rate is locked. If locked, the creditor must disclose the expiration date, time, and time zone. If not locked, this must be clearly indicated. A revised LE must be issued within three business days of locking a rate that was previously floating, if rate-dependent charges change."
+      },
+      {
+        "title": "Rate-Dependent Charges",
+        "content": "Under §1026.19(e)(3)(iv)(D), when the rate is not locked, the creditor may issue a revised LE resetting the tolerance baseline for any charges that are rate-dependent — including discount points, lender credits, and certain origination fees — once the rate is locked."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(13).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "If the interest rate has been set at the time of issuance, the Loan Estimate must disclose the date and time (including time zone) at which the rate will expire. If the interest rate has not been set, the Loan Estimate must clearly indicate this. Upon locking a previously floating rate, the creditor must deliver or place in the mail a revised Loan Estimate no later than three business days after the rate is locked, if the locked rate causes any rate-dependent charges to change. A revised LE issued upon a rate lock may only revise those charges that are actually rate-dependent."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The rate lock disclosure is the trigger for one of TRID's most important re-disclosure obligations: when a previously floating rate is locked, the creditor must issue a revised LE within three business days if any rate-dependent charges change. Failure to re-disclose after a rate lock is one of the most frequently cited TRID findings in examination. The required disclosure of the expiration date, time, and time zone also ensures consumers understand how long their rate is protected, which is material to their decision-making at a critical point in the transaction.",
+    "how_reviewed": "Examiners compare the rate lock status, expiration date, time, and time zone on the Loan Estimate against the lock confirmation document in the loan file. For transactions where the rate was initially floating, examiners verify that a revised LE was issued within three business days of the lock date and that only rate-dependent charges were updated. The examiner also reviews whether non-rate-dependent charges were improperly revised at the same time as the rate lock re-disclosure.",
+    "common_errors": [
+      {
+        "title": "No Revised LE Issued After Rate Lock",
+        "description": "The interest rate was locked after the initial Loan Estimate was issued and rate-dependent charges changed, but no revised Loan Estimate was delivered within three business days of the lock date.",
+        "cite": "§1026.19(e)(3)(iv)(D)"
+      },
+      {
+        "title": "Expiration Time or Time Zone Omitted",
+        "description": "The rate lock expiration date is disclosed but the required expiration time and time zone are missing — both are required elements under §1026.37(a)(13) and their omission is a technical violation even when the date is correctly stated.",
+        "cite": "§1026.37(a)(13)"
+      },
+      {
+        "title": "Rate Lock Status Inconsistent With File Evidence",
+        "description": "The Loan Estimate indicates the rate is locked, but no corresponding lock confirmation exists in the file, or the lock confirmation reflects a different rate or expiration date than what is disclosed on the form."
+      },
+      {
+        "title": "Non-Rate-Dependent Charges Revised at Lock",
+        "description": "When a revised LE was issued upon rate lock, charges that are not rate-dependent — such as appraisal fees or title charges — were also revised, improperly resetting the tolerance baseline for those charges without a valid changed circumstance.",
+        "cite": "§1026.19(e)(3)(iv)(D)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Verify Lock Confirmation Against LE Disclosure",
+        "description": "Verify that the lock confirmation document in the file reflects the same rate, date, and expiration time as the Loan Estimate — inconsistencies suggest the LE was not updated after the lock was established and may indicate a missing re-disclosure obligation."
+      },
+      {
+        "title": "Confirm Only Rate-Dependent Charges Were Revised",
+        "description": "When reviewing revised LEs issued after a rate lock, confirm that only rate-dependent charges — such as discount points, origination fees, and lender credits — were revised, and that non-rate-dependent charges were not improperly reset at the same time."
+      },
+      {
+        "title": "Check for Time Zone in Rate Lock Expiration",
+        "description": "Confirm the time zone is disclosed on the rate lock expiration — many institutions disclose the date but omit the time and time zone, which is a technical deficiency that is frequently identified in TRID examination samples."
+      },
+      {
+        "title": "Assess Floating-Rate Disclosure Procedures",
+        "description": "For floating-rate applications, check whether the institution has a documented procedure for issuing revised LEs upon rate lock — the absence of a defined process is itself a risk indicator that warrants inquiry during a compliance examination."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(13)",
+      "label": "Rate Lock — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-13"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iv)(D)",
+      "label": "Changed Circumstance — Interest Rate Lock",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-D"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "rate lock expiration",
+      "rate lock extension",
+      "initial rate lock after floating"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(D)"
+  },
+  "related_fields": [
+    "1026-37-a-7-product",
+    "1026-37-b-2-interest-rate",
+    "1026-37-a-1-date-issued"
+  ],
+  "tags": [
+    "general-information",
+    "rate-lock",
+    "timing",
+    "rate",
+    "changed-circumstance"
+  ],
+  "last_updated": "2026-02-27"
+}

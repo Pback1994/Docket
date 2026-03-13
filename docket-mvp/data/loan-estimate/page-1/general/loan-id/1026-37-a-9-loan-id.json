@@ -1,0 +1,97 @@
+{
+  "id": "1026-37-a-9-loan-id",
+  "panel_header": "Loan ID #",
+  "regulation": "12 CFR §1026.37(a)(12)",
+  "summary": "A unique identifier assigned by the creditor to the transaction. Must remain consistent across all versions of the Loan Estimate and the Closing Disclosure — the primary linkage field for TRID examination.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 9,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-8-loan-type",
+    "next_field_id": "1026-37-a-10-rate-lock"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Loan ID #</strong> is the unique identifier the creditor assigns to the transaction. It must remain consistent across all versions of the Loan Estimate and the Closing Disclosure, serving as the primary linkage field for TRID examination.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(12) requires the creditor to disclose a unique loan identification number. This number is assigned by the creditor and must appear consistently on the initial LE, all revised LEs, and the Closing Disclosure to enable disclosure matching and tolerance analysis."
+      },
+      {
+        "title": "Disclosure Chain",
+        "content": "Examiners use the Loan ID # as the primary key to match the LE to the CD and evaluate tolerance compliance. A missing or inconsistent Loan ID breaks the disclosure chain and can require reconstructing the tolerance baseline from other file evidence — creating significant examination burden."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(12).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The Loan ID number is a number that identifies the transaction and enables the creditor and consumer to identify it. The same number must appear on all versions of the Loan Estimate and on the Closing Disclosure. The Loan ID number need not be the same as the creditor's internal loan number, though it may be. The number must be sufficiently unique to distinguish the transaction from other transactions originated by the creditor. The regulation does not prescribe the format of the Loan ID number."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Loan ID number is the primary linkage field that connects the initial Loan Estimate to all revised LEs and to the Closing Disclosure, enabling examiners to reconstruct the complete disclosure chain and perform tolerance analysis. Without a consistent Loan ID, it is impossible to confirm which LE version establishes the tolerance baseline for a given closing, and the entire LE-to-CD comparison must be reconstructed from other file evidence. A missing or inconsistent Loan ID is therefore one of the most operationally significant technical deficiencies an examiner can encounter.",
+    "how_reviewed": "Examiners use the Loan ID as the primary matching key when assembling LE and CD pairs for tolerance analysis. They verify that the same Loan ID appears on the initial LE, all revised LEs, and the Closing Disclosure. Examiners also conduct data-level checks across the loan file sample to identify duplicate or missing Loan IDs that indicate systemic configuration issues in the institution's LOS.",
+    "common_errors": [
+      {
+        "title": "Loan ID Blank on One or More Disclosures",
+        "description": "The Loan ID number field is left blank on the initial Loan Estimate or on one or more revised versions, breaking the disclosure chain and preventing a clean match between the LE and the Closing Disclosure during examination.",
+        "cite": "§1026.37(a)(12)"
+      },
+      {
+        "title": "Loan ID Changed Between LE Versions",
+        "description": "The Loan ID changed between the initial Loan Estimate and a revised version without explanation, making it impossible to confirm the disclosure chain and requiring examiners to reconstruct the tolerance baseline from other file evidence."
+      },
+      {
+        "title": "Loan ID Does Not Match Closing Disclosure",
+        "description": "The Loan ID on the Loan Estimate does not match the Loan ID on the Closing Disclosure, creating ambiguity about which LE version governs the tolerance analysis and potentially indicating that disclosures were generated for different transactions."
+      },
+      {
+        "title": "Non-Unique Loan IDs Across Multiple Files",
+        "description": "The same Loan ID number appears on multiple loan files in the examination sample, indicating a LOS configuration error that undermines the identification function of the field and complicates the matching of disclosures at scale."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Use Loan ID as Primary LE-to-CD Matching Key",
+        "description": "Use the Loan ID as the primary matching field when assembling Loan Estimate and Closing Disclosure pairs for tolerance analysis — flag any pair where the IDs do not match before beginning the tolerance review, as the mismatch itself is a finding."
+      },
+      {
+        "title": "Investigate LOS Changes When IDs Are Missing",
+        "description": "When a Loan ID is missing on a revised LE, check whether the LOS was updated or migrated during the origination period — system migrations and software updates are a frequent cause of ID discontinuity that can affect large segments of a loan file population."
+      },
+      {
+        "title": "Run a Duplicate ID Check Across the Sample",
+        "description": "For institutions under examination, pull a data extract of all Loan IDs for originated loans in the review period and check for duplicates — identifying non-unique IDs is an efficient method to detect systemic LOS configuration issues early in the examination."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(12)",
+      "label": "Loan Identification Number — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-12"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": false,
+    "triggers": [],
+    "regulatory_cite": null
+  },
+  "related_fields": [
+    "1026-37-a-1-date-issued",
+    "1026-37-a-2-applicants"
+  ],
+  "tags": [
+    "general-information",
+    "tracking",
+    "loan-identification",
+    "trid"
+  ],
+  "last_updated": "2026-02-27"
+}

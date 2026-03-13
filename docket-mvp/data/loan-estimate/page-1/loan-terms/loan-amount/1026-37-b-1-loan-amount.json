@@ -1,0 +1,109 @@
+{
+  "id": "1026-37-b-1-loan-amount",
+  "panel_header": "Loan Amount",
+  "regulation": "12 CFR §1026.37(b)(1)",
+  "summary": "The total principal balance being extended to the consumer. For a fixed-rate loan, the amount cannot increase after closing. Changes to the loan amount cascade through LTV ratios, MI requirements, and the cash-to-close calculation.",
+  "navigation": {
+    "section_group": "Loan Terms",
+    "field_number": 1,
+    "field_total": 5,
+    "page": 1,
+    "prev_field_id": null,
+    "next_field_id": "1026-37-b-2-interest-rate"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Loan Amount</strong> is the total principal balance being extended to the consumer. For a fixed-rate loan, the amount cannot increase after closing and the indicator must be marked 'NO.'",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(b)(1) requires disclosure of the loan amount and an indicator of whether it can increase after consummation. For a fixed-rate mortgage, the 'Can this amount increase after closing?' indicator must be marked 'NO.' The loan amount must be consistent with the amount used to calculate the P&I payment."
+      },
+      {
+        "title": "LTV and Fee Impact",
+        "content": "The loan amount directly affects loan-to-value ratios, which determine whether mortgage insurance is required, the applicable MI premium rate, and the cash-to-close calculation. A change in loan amount may cascade through multiple sections of the LE and require a revised disclosure."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(b)(1).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The loan amount is the total amount the consumer will borrow, as reflected in the legal obligation. The 'Can this amount increase after closing?' indicator must reflect whether the loan amount can increase after consummation. For a fixed-rate, fixed-amount loan, the indicator must be 'NO.' For a loan with a negative amortization feature, the indicator may be 'YES' with the maximum loan amount disclosed. The loan amount must match the amount used to compute the P&I payment under §1026.37(b)(3) and the Projected Payments table under §1026.37(c)."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The loan amount is the foundational variable from which the P&I payment, LTV ratio, mortgage insurance requirement, and cash-to-close calculation are all derived. An incorrect loan amount cascades through multiple sections of the Loan Estimate, creating compounding disclosure errors that are difficult to isolate without recalculating each dependent figure. For consumers, the loan amount represents the core of the financial obligation they are accepting, making its accuracy essential to informed decision-making.",
+    "how_reviewed": "Examiners verify the loan amount by cross-referencing it against the executed purchase contract or refinance application, and confirm mathematical consistency by recalculating the P&I payment using the disclosed amount, rate, and term. The loan amount is also traced through the cash-to-close calculation on page 2 and compared against the executed promissory note. When a revised LE was issued reflecting a loan amount change, examiners verify that the triggering event and timing of the revision are documented in the file.",
+    "common_errors": [
+      {
+        "title": "Loan Amount Differs From Executed Note",
+        "description": "The loan amount disclosed on the Loan Estimate does not match the amount in the executed promissory note or final loan documents, indicating a discrepancy between the estimated and actual legal obligation.",
+        "cite": "§1026.37(b)(1)"
+      },
+      {
+        "title": "No Revised LE After Loan Amount Change",
+        "description": "The consumer requested a change in loan amount — or a property value change affected the eligible loan amount — but no revised Loan Estimate was issued reflecting the updated figures and any cascading fee changes.",
+        "cite": "§1026.19(e)(3)(iv)(A)"
+      },
+      {
+        "title": "Loan Amount Inconsistent With Cash-to-Close Table",
+        "description": "The disclosed loan amount is not consistent with the Calculating Cash to Close table on page 2, most commonly caused by a last-minute loan amount change that was not fully propagated through all sections of the form."
+      },
+      {
+        "title": "Increase Indicator Incorrectly Marked for Fixed Loan",
+        "description": "The 'Can this amount increase after closing?' indicator is not marked 'NO' for a standard fixed-rate, fixed-amount loan, which creates a false impression that the loan balance could grow after consummation.",
+        "cite": "§1026.37(b)(1)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Recalculate P&I to Verify Loan Amount Input",
+        "description": "Verify the loan amount is mathematically consistent with the P&I payment disclosed in the Loan Terms table — use the standard amortization formula to confirm the underlying input, and flag any discrepancy for further investigation."
+      },
+      {
+        "title": "Document Triggering Events for Amount Changes",
+        "description": "When a revised LE was issued reflecting a loan amount change, confirm the triggering event — such as a consumer request or new purchase contract — is documented in the file with a date supporting the three-business-day re-disclosure timeline."
+      },
+      {
+        "title": "Cross-Reference Loan Amount Against LTV and MI",
+        "description": "For purchase transactions, cross-reference the loan amount against the down payment and sale price to verify the LTV calculation is consistent with any mortgage insurance disclosures on the form — an LTV error caused by an incorrect loan amount is a common compounding finding."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(b)(1)",
+      "label": "Loan Amount — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#b-1"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iv)(A)",
+      "label": "Changed Circumstance — Property Value / Loan Amount",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-A"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "consumer-requested loan amount change",
+      "property value change affecting LTV",
+      "program eligibility change"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(A)"
+  },
+  "related_fields": [
+    "1026-37-b-3-principal-interest",
+    "1026-37-a-4-sale-price",
+    "1026-37-d-2-estimated-cash-to-close"
+  ],
+  "tags": [
+    "loan-terms",
+    "loan-amount",
+    "ltv",
+    "changed-circumstance"
+  ],
+  "last_updated": "2026-02-27"
+}

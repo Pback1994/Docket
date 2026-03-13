@@ -1,0 +1,120 @@
+{
+  "id": "1026-37-k-comparisons",
+  "panel_header": "Comparisons",
+  "regulation": "12 CFR §1026.37(k)",
+  "summary": "Three standardized cost metrics — In 5 Years, Annual Percentage Rate (APR), and Total Interest Percentage (TIP) — designed to allow consumers to compare the true cost of credit across competing loan offers on a consistent basis.",
+  "navigation": {
+    "section_group": "Comparisons",
+    "field_number": 1,
+    "field_total": 1,
+    "page": 3,
+    "prev_field_id": null,
+    "next_field_id": null
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Comparisons</strong> section provides three standardized metrics that allow consumers to compare the true cost of credit across competing loan offers on a consistent basis.",
+    "cards": [
+      {
+        "title": "In 5 Years",
+        "content": "§1026.37(k)(1) requires disclosure of the total amount paid in principal, interest, mortgage insurance premiums, and loan costs during the first 60 months of the loan, presented as a total dollar amount and the principal paid in that period. For a fixed-rate loan with no MI, the calculation is: (60 × monthly P&I) + total loan costs from Sections A, B, and C of page 2. For loans with mortgage insurance or variable payments, each component must be calculated separately for the relevant payment periods within the first 60 months."
+      },
+      {
+        "title": "Annual Percentage Rate (APR)",
+        "content": "§1026.37(k)(2) requires disclosure of the APR calculated under §1026.22. The APR expresses the cost of credit as a yearly rate and includes not only the stated interest rate but all finance charges as defined under §1026.4 — including origination fees, points, and required third-party service charges included in Sections A and B. The APR must be accurate within the tolerances permitted under §1026.22(a)(5): for most transactions, ±0.125 percentage points from the exact APR. An APR that exceeds the tolerance on the CD requires cure."
+      },
+      {
+        "title": "Total Interest Percentage (TIP)",
+        "content": "§1026.37(k)(3) requires disclosure of the TIP — the ratio of total interest paid over the full loan term to the loan amount, expressed as a percentage. For a 30-year fixed-rate loan at 3.875%, the TIP is approximately 69–72% depending on the loan amount and amortization rounding. The TIP is calculated assuming the loan runs to full maturity with no prepayments. It does not include mortgage insurance premiums or closing costs — only interest paid over the life of the loan."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(k).",
+    "cards": [
+      {
+        "title": "Official Interpretation — In 5 Years Calculation",
+        "content": "The 'In 5 Years' figure includes: (1) all scheduled principal and interest payments in months 1 through 60, (2) all mortgage insurance premium payments during that period, and (3) all loan costs disclosed in Sections A, B, and C of the Loan Costs section on page 2. Ongoing homeowner's insurance, property taxes, and escrow payments are NOT included — only charges that appear in the Loan Costs section. For a fixed-rate loan with no MI, the calculation is simply: (60 × monthly P&I) + total of Sections A, B, and C from page 2. The principal paid component is disclosed separately to show how much equity the consumer will have built in 5 years."
+      },
+      {
+        "title": "Official Interpretation — APR Tolerance",
+        "content": "Under §1026.22(a)(5), the disclosed APR is considered accurate if it does not vary from the exact APR by more than 0.125 percentage point (1/8 of 1%) above or below for regular transactions. For irregular transactions (e.g., those with odd first periods or unusual payment schedules), the tolerance is 0.25 percentage point. An APR disclosed on the LE that increases beyond the applicable tolerance on the CD — due to last-minute changes in finance charges — requires the creditor to cure the difference. The cure must be made within 60 calendar days after consummation."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Comparisons section provides three standardized metrics — In 5 Years, APR, and TIP — that are designed to enable consumers to compare the true long-term cost of competing loan offers on a consistent basis. The APR in particular has legal significance beyond disclosure: if it increases beyond the §1026.22(a)(5) tolerance on the Closing Disclosure, a cure obligation is triggered. Errors in these figures — particularly APR errors caused by omitting required finance charges — can cause consumers to make credit decisions based on an understated or overstated cost of credit.",
+    "how_reviewed": "Examiners reconcile the APR independently using the disclosed loan amount, interest rate, term, and all finance charges from Sections A and B on page 2, then compare the result to the disclosed APR. The TIP is verified by calculating total interest over the full term and dividing by the loan amount. The 'In 5 Years' figure is verified by multiplying 60 months of P&I and MI payments, then adding total loan costs from page 2 Sections A, B, and C. APR on the CD is compared against the LE to check for the ±0.125% tolerance.",
+    "common_errors": [
+      {
+        "title": "APR Understated Due to Omitted Finance Charges",
+        "description": "The APR is calculated without including required finance charges — most commonly origination fees, discount points, or required third-party service charges from Sections A and B — causing the disclosed APR to understate the true cost of credit.",
+        "cite": "§1026.22"
+      },
+      {
+        "title": "TIP Calculated Using Inconsistent Inputs",
+        "description": "The Total Interest Percentage is calculated using a loan term or loan amount that does not match the disclosed figures elsewhere on the Loan Estimate, resulting in a TIP that is internally inconsistent with other disclosed figures.",
+        "cite": "§1026.37(k)(3)"
+      },
+      {
+        "title": "In 5 Years Figure Excludes Page 2 Loan Costs",
+        "description": "The 'In 5 Years' figure reflects only 60 months of scheduled payments without adding the required loan costs from page 2 Sections A, B, and C, understating the consumer's total out-of-pocket cost of credit in the first five years.",
+        "cite": "§1026.37(k)(1)"
+      },
+      {
+        "title": "APR Exceeds Tolerance on CD Without Cure",
+        "description": "The APR on the Closing Disclosure increased beyond the ±0.125 percentage point tolerance from the Loan Estimate APR — commonly caused by last-minute fee changes — without a corresponding cure within 60 calendar days of consummation.",
+        "cite": "§1026.22(a)(5)"
+      }
+    ],
+    "tips": [
+      {
+        "title": "Reconcile APR Independently Using Finance Charges",
+        "description": "Reconcile the APR independently using the disclosed loan amount, interest rate, term, and all finance charges from Sections A and B on page 2 — a discrepancy of more than 0.125% from the disclosed APR requires re-disclosure or cure analysis."
+      },
+      {
+        "title": "Verify TIP by Recalculating Total Interest",
+        "description": "Verify the TIP by calculating: (monthly P&I × total number of payments) minus the loan amount, then divide by the loan amount and compare to the disclosed TIP — a discrepancy reveals that the loan amount, rate, or term used in the LOS calculation is inconsistent with other disclosed figures."
+      },
+      {
+        "title": "Confirm LOS Adds Page 2 Costs to In 5 Years Figure",
+        "description": "Confirm that the LOS is adding page 2 Section A, B, and C costs to the 60-month payment sum for the 'In 5 Years' figure — this component is frequently omitted in LOS systems that calculate the figure using only scheduled P&I and MI payments."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(k)",
+      "label": "Comparisons — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#k"
+    },
+    {
+      "cite": "12 CFR § 1026.22",
+      "label": "APR Calculation — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/22/"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "interest rate change",
+      "fee changes affecting APR calculation",
+      "loan amount change"
+    ],
+    "regulatory_cite": "§1026.22(a)(5)"
+  },
+  "related_fields": [
+    "1026-37-b-2-interest-rate",
+    "1026-37-e-loan-costs",
+    "1026-37-b-1-loan-amount"
+  ],
+  "tags": [
+    "comparisons",
+    "apr",
+    "tip",
+    "five-year-cost",
+    "finance-charges",
+    "tolerances"
+  ],
+  "last_updated": "2026-03-04"
+}

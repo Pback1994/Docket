@@ -1,0 +1,110 @@
+{
+  "id": "1026-37-a-4-sale-price",
+  "panel_header": "Sale Price / Est. Prop. Value",
+  "regulation": "12 CFR §1026.37(a)(7)",
+  "summary": "For purchase transactions, the contract sale price. For non-purchase transactions, the estimated property value. The label used on the form changes based on transaction type and is legally significant.",
+  "navigation": {
+    "section_group": "General Information",
+    "field_number": 4,
+    "field_total": 10,
+    "page": 1,
+    "prev_field_id": "1026-37-a-3-property",
+    "next_field_id": "1026-37-a-5-loan-term"
+  },
+  "reg_requirement": {
+    "intro": "For purchase transactions, the <strong>Sale Price</strong> is the contract sale price. For non-purchase transactions, the label changes to <strong>\"Est. Prop. Value\"</strong> and reflects the estimated value of the property.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(a)(7) requires disclosure of the sale price for purchase transactions, or the estimated property value for non-purchase transactions. The label 'Sale Price' is used for purchases; 'Est. Prop. Value' must be used for refinances and all other non-purchase transactions."
+      },
+      {
+        "title": "Label Rule",
+        "content": "The label used on the form is legally significant. Using 'Sale Price' for a refinance transaction, or disclosing an estimated value instead of the contract price for a purchase, is a substantive disclosure error — not merely a formatting issue."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(a)(7).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "For purchase transactions, the sale price is the contract sale price as stated in the purchase and sale agreement. For transactions that are not purchase transactions, the creditor must disclose the estimated value of the property and use the label 'Est. Prop. Value.' If no appraisal or other valuation has been obtained at the time the Loan Estimate is issued, the creditor may use any reasonable estimate of the property's value. A significant change in property value — such as an appraisal coming in materially below the contract price — may constitute a changed circumstance under §1026.19(e)(3)(iv)(A) if it affects disclosed charges."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "This field conveys foundational transaction economics — the price or value on which the loan's LTV ratio, mortgage insurance requirements, and cash-to-close calculation are based. The label used ('Sale Price' vs. 'Est. Prop. Value') is legally significant because it determines what the consumer is being told about the basis for their loan terms. An incorrect value or label misleads the consumer about core loan economics and can mask changed circumstances that require a revised disclosure.",
+    "how_reviewed": "For purchase transactions, examiners compare the disclosed sale price against the executed purchase and sale agreement. For non-purchase transactions, examiners evaluate whether the estimated property value is reasonable and whether the correct label was applied. Examiners also check for appraisal-related changed circumstances — specifically, whether an appraisal that came in below the contract price affected LTV-dependent charges and whether a revised LE was issued within three business days.",
+    "common_errors": [
+      {
+        "title": "Estimated Value Disclosed Instead of Contract Price",
+        "description": "An estimated property value is disclosed in place of the executed contract sale price for a purchase transaction, which may cause LTV and mortgage insurance figures to be incorrectly calculated and misrepresents the actual transaction price to the consumer.",
+        "cite": "§1026.37(a)(7)"
+      },
+      {
+        "title": "Wrong Label Applied to Transaction Type",
+        "description": "The label 'Sale Price' is used for a non-purchase transaction, or 'Est. Prop. Value' is used for a purchase transaction — both are substantive disclosure errors because the label determines what information is being conveyed to the consumer.",
+        "cite": "§1026.37(a)(7)"
+      },
+      {
+        "title": "No Revised LE After Below-Contract Appraisal",
+        "description": "An appraisal came in materially below the contract price and affected LTV-based charges such as mortgage insurance premiums, but no revised Loan Estimate was issued to reflect the changed charges within three business days.",
+        "cite": "§1026.19(e)(3)(iv)(A)"
+      },
+      {
+        "title": "Sale Price Inconsistent With Final Contract",
+        "description": "The sale price on the Loan Estimate does not match the final executed purchase contract — for example, after a price renegotiation that occurred after initial LE issuance — without a corresponding revised disclosure."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Verify Sale Price Against Executed Contract",
+        "description": "For purchase transactions, verify that the sale price on the Loan Estimate matches the executed purchase and sale agreement — a discrepancy often indicates the LE was prepared before the contract was finalized or after a price renegotiation went undisclosed."
+      },
+      {
+        "title": "Evaluate Appraisal-Driven Changed Circumstances",
+        "description": "When an appraisal comes in below the contract price, evaluate whether the resulting change in LTV affects any disclosed charges — such as mortgage insurance premiums — and whether a revised LE was required and issued within three business days of receiving the appraisal."
+      },
+      {
+        "title": "Check Label Accuracy in LOS Templates",
+        "description": "Verify that the correct label is applied — 'Sale Price' for purchases and 'Est. Prop. Value' for all other transaction types — because LOS systems configured with a single disclosure template frequently default to the wrong label for one transaction category."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(a)(7)",
+      "label": "Sale Price / Est. Prop. Value — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#a-7"
+    },
+    {
+      "cite": "12 CFR § 1026.19(e)(3)(iv)(A)",
+      "label": "Changed Circumstance — Property Value",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/19/#e-3-iv-A"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "property value change",
+      "appraisal revision",
+      "contract price renegotiation"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)(A)"
+  },
+  "related_fields": [
+    "1026-37-a-3-property",
+    "1026-37-b-1-loan-amount",
+    "1026-37-c-projected-payments"
+  ],
+  "tags": [
+    "general-information",
+    "property",
+    "valuation",
+    "loan-to-value",
+    "changed-circumstance"
+  ],
+  "last_updated": "2026-02-27"
+}

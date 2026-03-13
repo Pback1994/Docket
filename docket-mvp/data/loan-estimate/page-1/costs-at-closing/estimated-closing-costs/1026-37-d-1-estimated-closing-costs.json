@@ -1,0 +1,112 @@
+{
+  "id": "1026-37-d-1-estimated-closing-costs",
+  "panel_header": "Estimated Closing Costs",
+  "regulation": "12 CFR §1026.37(d)(1)",
+  "summary": "Total estimated closing costs equal to the sum of Loan Costs and Other Costs minus lender credits. A page 1 summary figure that must reconcile exactly with the itemized totals on page 2.",
+  "navigation": {
+    "section_group": "Costs at Closing",
+    "field_number": 1,
+    "field_total": 2,
+    "page": 1,
+    "prev_field_id": null,
+    "next_field_id": "1026-37-d-2-estimated-cash-to-close"
+  },
+  "reg_requirement": {
+    "intro": "The <strong>Estimated Closing Costs</strong> figure is a page 1 summary line showing total loan costs plus other costs, net of lender credits. It must reconcile exactly with the itemized fee totals disclosed on page 2.",
+    "cards": [
+      {
+        "title": "Regulatory Requirement",
+        "content": "§1026.37(d)(1) requires disclosure of the total estimated closing costs, consisting of a subtotal of loan costs and other costs and the net figure after lender credits. This is a roll-up of the itemized disclosures under §1026.37(e) and §1026.37(f) on page 2 and must be mathematically consistent with those totals."
+      },
+      {
+        "title": "Page 2 Reconciliation",
+        "content": "Examiners routinely cross-reference the Estimated Closing Costs on page 1 against the sum of Total Loan Costs (D) and Total Other Costs (I) on page 2, minus lender credits. Any discrepancy is a compliance finding indicating either an arithmetic error or a failure to update the disclosure after a late change to an individual fee."
+      }
+    ]
+  },
+  "interpretation": {
+    "intro": "Supplement I (Official Interpretations) to 12 CFR Part 1026 provides the following guidance on §1026.37(d)(1).",
+    "cards": [
+      {
+        "title": "Official Interpretation",
+        "content": "The total closing costs disclosed under §1026.37(d)(1) must equal the sum of all loan costs under §1026.37(e) and all other costs under §1026.37(f), minus any lender credits. This is a summary figure — it does not introduce new charges but summarizes the itemized disclosures on page 2. Lender credits that offset closing costs must be reflected as a negative amount. Any change to an itemized charge on page 2 requires a corresponding update to this summary figure on a revised Loan Estimate."
+      }
+    ]
+  },
+  "examiner_view": {
+    "why_it_matters": "The Estimated Closing Costs figure is the consumer's single most-referenced cost summary on page 1, and it must be a mathematically precise roll-up of all itemized charges on page 2 net of lender credits. Errors in this figure — whether from arithmetic mistakes or failure to propagate page 2 changes — obscure the true cost of the transaction and can affect the consumer's ability to accurately compare competing loan offers. Any discrepancy between this figure and the page 2 totals is automatically a compliance finding regardless of cause or magnitude.",
+    "how_reviewed": "Examiners add Total Loan Costs (D) and Total Other Costs (I) from page 2 of the Loan Estimate, subtract any lender credits, and compare the result to the page 1 Estimated Closing Costs. This arithmetic check is performed on every file as a standard first step. For revised LEs, examiners also verify that the page 1 summary was updated when individual fee line items changed on page 2, and that lender credits are consistently reflected across both pages.",
+    "common_errors": [
+      {
+        "title": "Page 1 Summary Does Not Match Page 2 Totals",
+        "description": "The Estimated Closing Costs figure on page 1 does not equal the sum of Total Loan Costs and Total Other Costs from page 2 minus lender credits, indicating an arithmetic error or a stale disclosure not updated after a late fee change.",
+        "cite": "§1026.37(d)(1)"
+      },
+      {
+        "title": "Lender Credits Not Netted From Gross Total",
+        "description": "Lender credits disclosed on page 2 are not subtracted from the gross closing cost figure in the page 1 summary, causing the Estimated Closing Costs to overstate the net amount the consumer will pay."
+      },
+      {
+        "title": "Page 1 Summary Not Updated After Page 2 Revisions",
+        "description": "Individual fee line items on page 2 of a revised Loan Estimate were updated, but the page 1 Estimated Closing Costs summary was not recalculated to reflect the revised totals — a systemic failure in some LOS platforms."
+      },
+      {
+        "title": "Known Seller Concessions Omitted From Calculation",
+        "description": "Seller concessions that were known at the time of disclosure and should reduce the net closing costs to the consumer are omitted from the closing cost calculation, causing the disclosed figure to overstate the consumer's actual cost."
+      }
+    ],
+    "tips": [
+      {
+        "title": "Perform the Page 1-to-Page 2 Arithmetic Check First",
+        "description": "Add Total Loan Costs (D) and Total Other Costs (I) from page 2, subtract lender credits, and compare to the page 1 Estimated Closing Costs — this arithmetic check should be the standard first step in every file review before examining individual fee tolerances."
+      },
+      {
+        "title": "Verify Page 1 Summary Is Updated on Revised LEs",
+        "description": "For revised Loan Estimates, check whether the page 1 summary was updated when individual fees on page 2 changed — some LOS systems fail to automatically propagate fee changes to the page 1 roll-up, creating a persistent internal inconsistency."
+      },
+      {
+        "title": "Confirm Lender Credit Consistency Across Both Pages",
+        "description": "Verify that any lender credit disclosed on page 2 is correctly subtracted in the page 1 total, and that the credit amount remains consistent through the Closing Disclosure unless a valid changed circumstance supports a reduction."
+      }
+    ]
+  },
+  "citations": [
+    {
+      "cite": "12 CFR § 1026.37(d)(1)",
+      "label": "Estimated Closing Costs — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#d-1"
+    },
+    {
+      "cite": "12 CFR § 1026.37(e)",
+      "label": "Loan Costs — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#e"
+    },
+    {
+      "cite": "12 CFR § 1026.37(f)",
+      "label": "Other Costs — CFPB · Regulation Z",
+      "url": "https://www.consumerfinance.gov/rules-policy/regulations/1026/37/#f"
+    }
+  ],
+  "tolerance": null,
+  "changed_circumstance": {
+    "can_trigger_revised_le": true,
+    "triggers": [
+      "change to any itemized fee on page 2",
+      "lender credit change",
+      "changed circumstance affecting any component fee"
+    ],
+    "regulatory_cite": "§1026.19(e)(3)(iv)"
+  },
+  "related_fields": [
+    "1026-37-d-2-estimated-cash-to-close",
+    "1026-37-e-loan-costs",
+    "1026-37-f-other-costs"
+  ],
+  "tags": [
+    "costs-at-closing",
+    "closing-costs",
+    "tolerances",
+    "page-2-summary"
+  ],
+  "last_updated": "2026-02-27"
+}
