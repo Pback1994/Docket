@@ -35,6 +35,35 @@ export function renderPanel(data) {
   attachRelatedFieldBehavior();
 }
 
+export function renderLoadingPanel() {
+  const panel = document.getElementById("annotation-panel");
+  if (!panel) return;
+
+  panel.innerHTML = `
+    <div class="panel-skeleton">
+      <div class="skeleton-line skeleton-line--short"></div>
+      <div class="skeleton-line skeleton-line--title"></div>
+      <div class="skeleton-chips">
+        <div class="skeleton-chip"></div>
+        <div class="skeleton-chip"></div>
+      </div>
+      <div class="skeleton-tabs">
+        <div class="skeleton-tab"></div>
+        <div class="skeleton-tab"></div>
+        <div class="skeleton-tab"></div>
+      </div>
+      <div class="skeleton-body">
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line skeleton-line--wide"></div>
+        <div class="skeleton-line skeleton-line--mid"></div>
+        <div class="skeleton-block"></div>
+        <div class="skeleton-line skeleton-line--wide"></div>
+        <div class="skeleton-line skeleton-line--short"></div>
+      </div>
+    </div>
+  `;
+}
+
 export function renderDefaultPanel() {
   const panel = document.getElementById("annotation-panel");
   if (!panel) return;

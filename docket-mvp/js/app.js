@@ -66,12 +66,13 @@ export function getCurrentPage() {
 }
 
 export async function loadSection(pageId, sectionId) {
+  const { renderLoadingPanel, renderPanel } = await import("./renderers/panelRenderer.js");
+  renderLoadingPanel();
+
   const data = await loadPanelData(pageId, sectionId);
   if (!data) return;
 
-  const { renderPanel } = await import("./renderers/panelRenderer.js");
   renderPanel(data);
-
   updateURL(pageId, sectionId);
 }
 
