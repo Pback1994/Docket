@@ -86,11 +86,15 @@ function renderTabs() {
   ];
 
   return `
-    <div class="panel-tabs">
+    <div class="panel-tabs" role="tablist" aria-label="Annotation sections">
       ${tabs
         .map(
           (t) => `
-        <button class="panel-tab${t.id === activeTab ? " active" : ""}" data-tab="${t.id}">
+        <button class="panel-tab${t.id === activeTab ? " active" : ""}"
+                data-tab="${t.id}"
+                role="tab"
+                aria-selected="${t.id === activeTab ? "true" : "false"}"
+                tabindex="${t.id === activeTab ? "0" : "-1"}">
           <span class="tab-icon">${t.icon}</span>${t.label}
         </button>
       `,
@@ -329,19 +333,40 @@ function attachFooterNavBehavior(data) {
 /* Tab Behavior                              */
 /* ========================================= */
 
+function activateTab(tab, tabs) {
+  activeTab = tab.dataset.tab;
+  tabs.forEach((t) => {
+    t.classList.remove("active");
+    t.setAttribute("aria-selected", "false");
+    t.setAttribute("tabindex", "-1");
+  });
+  tab.classList.add("active");
+  tab.setAttribute("aria-selected", "true");
+  tab.setAttribute("tabindex", "0");
+  document.querySelector(".panel-tab-area").innerHTML = renderTabContent(
+    currentData,
+    activeTab,
+  );
+  attachCrossReferenceBehavior();
+  attachRelatedFieldBehavior();
+}
+
 function attachTabBehavior() {
-  const tabs = document.querySelectorAll(".panel-tab");
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      activeTab = tab.dataset.tab;
-      tabs.forEach((t) => t.classList.remove("active"));
-      tab.classList.add("active");
-      document.querySelector(".panel-tab-area").innerHTML = renderTabContent(
-        currentData,
-        activeTab,
-      );
-      attachCrossReferenceBehavior();
-      attachRelatedFieldBehavior();
+  const tabs = Array.from(document.querySelectorAll(".panel-tab"));
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => activateTab(tab, tabs));
+    tab.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") {
+        e.preventDefault();
+        const next = tabs[(index + 1) % tabs.length];
+        next.focus();
+        activateTab(next, tabs);
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        const prev = tabs[(index - 1 + tabs.length) % tabs.length];
+        prev.focus();
+        activateTab(prev, tabs);
+      }
     });
   });
 }

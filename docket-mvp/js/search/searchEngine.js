@@ -60,6 +60,18 @@ function attachSearchListener() {
     clearTimeout(searchDebounceTimer);
     searchDebounceTimer = setTimeout(() => performSearch(e.target.value), 200);
   });
+
+  input.addEventListener("keydown", (e) => {
+    const results = document.querySelectorAll(".search-result");
+    if (!results.length) return;
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      results[0].focus();
+    } else if (e.key === "Escape") {
+      clearSearch();
+    }
+  });
 }
 
 export function performSearch(query) {
@@ -88,7 +100,9 @@ export function performSearch(query) {
       (result) => `
       <div class="search-result"
            data-page="${result.pageId}"
-           data-section="${result.sectionId}">
+           data-section="${result.sectionId}"
+           tabindex="-1"
+           role="option">
         <span class="result-page-label">Page ${result.pageId.replace("page", "")}</span>
         <strong>${result.header}</strong>
         <p>${result.summary}</p>
@@ -100,16 +114,40 @@ export function performSearch(query) {
   attachResultClicks();
 }
 
+function selectResult(result) {
+  const pageId = result.dataset.page;
+  const sectionId = result.dataset.section;
+  document.getElementById("search-results").innerHTML = "";
+  navigateToPage(pageId);
+  loadSection(pageId, sectionId);
+}
+
 function attachResultClicks() {
-  document.querySelectorAll(".search-result").forEach((result) => {
-    result.addEventListener("click", () => {
-      const pageId = result.dataset.page;
-      const sectionId = result.dataset.section;
+  const results = Array.from(document.querySelectorAll(".search-result"));
+  const input = document.getElementById("search-input");
 
-      document.getElementById("search-results").innerHTML = "";
+  results.forEach((result, index) => {
+    result.addEventListener("click", () => selectResult(result));
 
-      navigateToPage(pageId);
-      loadSection(pageId, sectionId);
+    result.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        selectResult(result);
+      } else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        const next = results[index + 1];
+        if (next) next.focus();
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        if (index === 0) {
+          input?.focus();
+        } else {
+          results[index - 1].focus();
+        }
+      } else if (e.key === "Escape") {
+        clearSearch();
+        input?.focus();
+      }
     });
   });
 }

@@ -93,7 +93,7 @@ export function navigateToPage(pageId) {
   svg.innerHTML = config.rects
     .map(
       (r) =>
-        `<rect data-section="${r.section}" x="${r.x}" y="${r.y}" width="${r.width}" height="${r.height}" />`,
+        `<rect data-section="${r.section}" x="${r.x}" y="${r.y}" width="${r.width}" height="${r.height}" tabindex="0" role="button" aria-label="${r.section}" />`,
     )
     .join("");
 
@@ -153,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
   attachNavListeners();
   handleInitialLoad();
   initializeSearch();
+  attachEscapeListener();
 });
 
 /* ---------------------------------- */
@@ -175,20 +176,37 @@ function attachNavListeners() {
 /* Overlay Click Binding */
 /* ---------------------------------- */
 
+function activateRegion(region) {
+  if (activeRect) activeRect.classList.remove("active");
+  region.classList.add("active");
+  activeRect = region;
+  clearSearch();
+  loadSection(currentPage, region.dataset.section);
+}
+
 function attachOverlayListeners() {
   const regions = document.querySelectorAll("[data-section]");
 
   regions.forEach((region) => {
-    region.addEventListener("click", () => {
-      // Update active region highlight
-      if (activeRect) activeRect.classList.remove("active");
-      region.classList.add("active");
-      activeRect = region;
-
-      // Clear any lingering search state
-      clearSearch();
-
-      loadSection(currentPage, region.dataset.section);
+    region.addEventListener("click", () => activateRegion(region));
+    region.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        activateRegion(region);
+      }
     });
+  });
+}
+
+function attachEscapeListener() {
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    if (activeRect) {
+      activeRect.classList.remove("active");
+      activeRect = null;
+    }
+    import("./renderers/panelRenderer.js").then(({ renderDefaultPanel }) =>
+      renderDefaultPanel(),
+    );
   });
 }

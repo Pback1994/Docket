@@ -136,6 +136,17 @@
   stroke-width: 1.5;
 }
 
+.overlay rect:focus {
+  outline: none;
+  fill: rgba(0, 123, 255, 0.2);
+  stroke: rgba(0, 90, 200, 0.6);
+  stroke-width: 1.5;
+}
+
+.overlay rect.active:focus {
+  fill: rgba(0, 123, 255, 0.4);
+}
+
 /* ---------------------------------- */
 /* Page Navigation */
 /* ---------------------------------- */
